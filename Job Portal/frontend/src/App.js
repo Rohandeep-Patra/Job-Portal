@@ -17,6 +17,8 @@ function App() {
         <Route exact path='/candidate' element={<Candidates/>}/>
         <Route exact path='/employee' element={<Employees/>}/>
         <Route exact path='/contact' element={<Contact/>}/>
+        <Route exact path='/candidate-dash' element={<Contact/>}/>
+        <Route exact path='/candidate-dash' element={<Contact/>}/>
       </Routes>
     </>
   );

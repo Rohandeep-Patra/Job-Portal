@@ -3,6 +3,16 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
+
   const TOP_OFFSET = 50;
   const [showBackground, setShowBackground] = useState(false);
 
@@ -23,13 +33,13 @@ const Navbar = () => {
     };
   }, []);
 
-  let Links = [
-    { name: "HOME", link: "/" },
-    { name: "FIND JOBS", link: "/jobs" },
-    { name: "CANDIDATES", link: "/candidate" },
-    { name: "EMPLOYEES", link: "/employee" },
-    { name: "CONTACT US", link: "/contact" },
-  ];
+  // let Links = [
+  //   { name: "HOME", link: "/" },
+  //   { name: "FIND JOBS", link: "/jobs" },
+  //   { name: "CANDIDATES", link: "/candidate" },
+  //   { name: "EMPLOYEES", link: "/employee" },
+  //   { name: "CONTACT US", link: "/contact" },
+  // ];
   let [open, setOpen] = useState(false);
   return (
     <>
@@ -39,7 +49,10 @@ const Navbar = () => {
             showBackground ? "bg-blue-900" : "bg-transparent"
           }  md:ease-in`}
         >
-          <NavLink to="/" className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-white">
+          <NavLink
+            to="/"
+            className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-white"
+          >
             <span className="text-3xl text-white mr-1 pt-2">
               <ion-icon name="logo-ionic"></ion-icon>
             </span>
@@ -59,18 +72,43 @@ const Navbar = () => {
             }`}
           >
             <div className="md:flex md:mr-20 ">
-              {Links.map((link) => (
+              {/* {Links.map((link) => (
                 <li
                   key={link.name}
                   className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center hover:underline hover:underline-offset-8 hover:decoration-white"
                 >
                   <NavLink to={link.link}>{link.name}</NavLink>
                 </li>
-              ))}
-            </div>
-           
-            <div className="flex flex-row items-center justify-center content-center">
+              ))} */}
+
+              <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center hover:underline hover:underline-offset-8 hover:decoration-white">
+                <NavLink to="/">HOME</NavLink>
+              </li>
+              <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center hover:underline hover:underline-offset-8 hover:decoration-white">
+                <NavLink to="/jobs">FIND JOBS</NavLink>
+              </li>
               
+              <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center relative md:inline-block group">
+                <button className="hover:underline hover:underline-offset-8 hover:decoration-white">CANDIDATES</button>
+                <div className="absolute z-1 bg-white shadow-md text-black w-[205px] h-28 hidden group-hover:block text-left ">
+                  <NavLink className="block mx-4 mt-4 p-2 hover:bg-blue-100/30 rounded-md hover:font-semibold  hover:text-blue-800"  to="/candidate">Candidate List</NavLink>
+                  <NavLink className="block mx-4  p-2 hover:bg-blue-100/30 rounded-md hover:font-medium hover:text-blue-800" to="/candidate-dash">Candidate DashBoard</NavLink>
+                </div>
+              </li>
+              <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center relative md:inline-block group">
+                <button className="hover:underline hover:underline-offset-8 hover:decoration-white">EMPLOYEES</button>
+                <div className="absolute z-1 bg-white shadow-md text-black w-[205px] h-28 hidden group-hover:block text-left ">
+                  <NavLink className="block mx-4 mt-4 p-2 hover:bg-blue-100/30 rounded-md hover:font-semibold  hover:text-blue-800"  to="/employee">Employee List</NavLink>
+                  <NavLink className="block mx-4  p-2 hover:bg-blue-100/30 rounded-md hover:font-medium hover:text-blue-800" to="/employee-dash">Employee DashBoard</NavLink>
+                </div>
+              </li>
+              
+              <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center hover:underline hover:underline-offset-8 hover:decoration-white">
+                <NavLink to="/contact">CONTACT US</NavLink>
+              </li>
+            </div>
+
+            <div className="flex flex-row items-center justify-center content-center">
               <button className=" md:bg-transparent md:text-white text-base py-2 px-6 rounded md:ml-8 md:hover:bg-white md:hover:text-black duration-500 mr-4 md:mr-0 bg-white text-black hover:bg-transparent hover:text-white border border-white">
                 LOGIN/REGISTRATION
               </button>
@@ -84,5 +122,7 @@ const Navbar = () => {
     </>
   );
 };
+
+
 
 export default Navbar;
