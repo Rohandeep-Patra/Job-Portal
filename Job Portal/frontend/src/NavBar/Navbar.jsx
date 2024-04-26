@@ -93,19 +93,20 @@ const Navbar = () => {
                   <NavLink className="block mx-4 mt-4 p-2 hover:bg-blue-100/30 rounded-md hover:font-semibold  hover:text-blue-800"  to="/candidate">Candidate List</NavLink>
                   <NavLink className="block mx-4  p-2 hover:bg-blue-100/30 rounded-md hover:font-medium hover:text-blue-800" to="/candidate-dash">Candidate DashBoard</NavLink>
                 </div>
-                <div id="submenu" className="sm:hidden bg-transparent text-white w-full h-auto">
+          
+                <div id="submenu" className="hidden relative bg-transparent text-white w-full h-auto">
                   <NavLink className="block mx-4 mt-4 p-2 bg-blue-100/30 rounded-md hover:font-semibold"  to="/employee">Employee List</NavLink>
                   <NavLink className="block mx-4  p-2 bg-blue-100/30 rounded-md hover:font-medium my-2" to="/employee-dash">Employee DashBoard</NavLink>
                 </div>
               </li>
 
               <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center relative md:inline-block group">
-                <button className="hover:underline hover:underline-offset-8 hover:decoration-white" onClick={Show1}>EMPLOYEES</button>
+                <button className="hover:underline hover:underline-offset-8 hover:decoration-white"  onClick={Show1}>EMPLOYEES</button>
                 <div className="absolute z-1 bg-white shadow-md text-black w-[205px] h-28 hidden md:group-hover:block text-left">
                   <NavLink className="block mx-4 mt-4 p-2 hover:bg-blue-100/30 rounded-md hover:font-semibold  hover:text-blue-800"  to="/employee">Employee List</NavLink>
                   <NavLink className="block mx-4  p-2 hover:bg-blue-100/30 rounded-md hover:font-medium hover:text-blue-800" to="/employee-dash">Employee DashBoard</NavLink>
                 </div>
-                <div id="submenu1" className="sm:hidden  bg-transparent text-white w-full h-auto ">
+                <div id="submenu1" className="hidden bg-transparent text-white w-full h-auto ">
                   <NavLink className="block mx-4 mt-4 p-2 bg-blue-100/30 rounded-md hover:font-semibold  "  to="/employee">Employee List</NavLink>
                   <NavLink className="block mx-4  p-2 bg-blue-100/30 rounded-md hover:font-medium my-2" to="/employee-dash">Employee DashBoard</NavLink>
                 </div>
