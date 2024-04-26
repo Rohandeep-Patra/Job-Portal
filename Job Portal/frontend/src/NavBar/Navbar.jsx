@@ -3,15 +3,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
-
-  const handleMouseEnter = () => {
-    setDropdownVisible(true);
-  };
-
-  const handleMouseLeave = () => {
-    setDropdownVisible(false);
-  };
+  
 
   const TOP_OFFSET = 50;
   const [showBackground, setShowBackground] = useState(false);
@@ -33,13 +25,7 @@ const Navbar = () => {
     };
   }, []);
 
-  // let Links = [
-  //   { name: "HOME", link: "/" },
-  //   { name: "FIND JOBS", link: "/jobs" },
-  //   { name: "CANDIDATES", link: "/candidate" },
-  //   { name: "EMPLOYEES", link: "/employee" },
-  //   { name: "CONTACT US", link: "/contact" },
-  // ];
+  
   let [open, setOpen] = useState(false);
   return (
     <>
@@ -72,14 +58,6 @@ const Navbar = () => {
             }`}
           >
             <div className="md:flex md:mr-20 ">
-              {/* {Links.map((link) => (
-                <li
-                  key={link.name}
-                  className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center hover:underline hover:underline-offset-8 hover:decoration-white"
-                >
-                  <NavLink to={link.link}>{link.name}</NavLink>
-                </li>
-              ))} */}
 
               <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center hover:underline hover:underline-offset-8 hover:decoration-white">
                 <NavLink to="/">HOME</NavLink>
