@@ -25,13 +25,22 @@ function App() {
         <Route exact path='/candidate' element={<Candidates/>}/>
         <Route exact path='/employee' element={<Employees/>}/>
         <Route exact path='/contact' element={<Contact/>}/>
-        <Route exact path='/candidate-dash' element={<Contact/>}/>
+
         <Route exact path='/employee-dash' element={<Dash/>}/>
         <Route exact path='/employee-dash/company' element={<Company/>}/>
         <Route exact path='/employee-dash/applicants' element={<Applicants/>}/>
         <Route exact path='/employee-dash/postnewjob' element={<Postnewjob/>}/>
         <Route exact path='/employee-dash/manage' element={<Manage/>}/>
         <Route exact path='/employee-dash/short' element={<Short/>}/>
+
+        <Route exact path='/candidate-dash' element={<CandidateDashbord/>}/>
+        <Route exact path='/candidate-dash/myprofile' element={<Myprofile/>}/>
+        <Route exact path='/candidate-dash/myResume' element={<MyResume/>}/>
+        <Route exact path='/candidate-dash/appliedJob' element={<AppliedJob/>}/>
+        <Route exact path='/candidate-dash/jobAlerts' element={<JobAlerts/>}/>
+        <Route exact path='/candidate-dash/candidateshort' element={<CandidateShort/>}/>
+        <Route exact path='/candidate-dash/changePassword' element={<ChangePassword/>}/>
+
       </Routes>
     </>
   );
