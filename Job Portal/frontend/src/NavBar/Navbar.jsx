@@ -95,8 +95,8 @@ const Navbar = () => {
                 </div>
           
                 <div id="submenu" className="hidden relative bg-transparent text-white w-full h-auto">
-                  <NavLink className="block mx-4 mt-4 p-2 bg-blue-100/30 rounded-md hover:font-semibold"  to="/employee">Employee List</NavLink>
-                  <NavLink className="block mx-4  p-2 bg-blue-100/30 rounded-md hover:font-medium my-2" to="/employee-dash">Employee DashBoard</NavLink>
+                  <NavLink className="block mx-4 mt-4 p-2 bg-blue-100/30 rounded-md hover:font-semibold"  to="/candidate">Candidate List</NavLink>
+                  <NavLink className="block mx-4  p-2 bg-blue-100/30 rounded-md hover:font-medium my-2" to="/candidate-dash">candidate DashBoard</NavLink>
                 </div>
               </li>
 
