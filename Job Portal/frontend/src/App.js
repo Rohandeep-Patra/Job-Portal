@@ -11,6 +11,13 @@ import Postnewjob from './Dashboard/Employee Dashboard/Postnewjob';
 import Manage from './Dashboard/Employee Dashboard/Manage';
 import Short from './Dashboard/Employee Dashboard/Short';
 import Applicants from './Dashboard/Employee Dashboard/Applicants';
+import CandidateDashbord from './Dashboard/CandidateDashboard/CandidateDashboard';
+import Myprofile from './Dashboard/CandidateDashboard/Myprofile';
+import MyResume from './Dashboard/CandidateDashboard/MyResume';
+import AppliedJob from './Dashboard/CandidateDashboard/AppliedJob';
+import JobAlerts from './Dashboard/CandidateDashboard/JobAlerts';
+import CandidateShort from './Dashboard/CandidateDashboard/CandidateShort';
+import ChangePassword from './Dashboard/CandidateDashboard/ChangePassword';
 
 
 // import Sidebar from './DashBoard/Candidate DashBoard/Sidebar';
