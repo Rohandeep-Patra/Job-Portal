@@ -226,7 +226,7 @@ function Dash() {
           </div>
         </nav>
     </div>
-    <div className='flex bg-slate-100'>
+    <div className='flex mt-20 bg-slate-100'>
 
 <div className='w-[16%] fixed'><Sidebar/></div>
 <div className='md:p-9 p-6 md:ml-[16%]  mx-auto w-full md:mt-0 mt-9'>
