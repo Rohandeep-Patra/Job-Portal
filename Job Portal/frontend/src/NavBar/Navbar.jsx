@@ -1,10 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import Dropdown from "react-bootstrap/Dropdown";
 
 const Navbar = () => {
-  
-
   const TOP_OFFSET = 50;
   const [showBackground, setShowBackground] = useState(false);
 
@@ -25,29 +24,24 @@ const Navbar = () => {
     };
   }, []);
 
-  
   let [open, setOpen] = useState(false);
 
-  const Show = () =>{
-    if(document.getElementById('submenu').style.display === 'block'){
-        document.getElementById('submenu').style.display = 'none';
-        
-    }else{
-      document.getElementById('submenu').style.display = 'block';
-      document.getElementById('submenu1').style.display = 'none';
-        
+  const Show = () => {
+    if (document.getElementById("submenu").style.display === "block") {
+      document.getElementById("submenu").style.display = "none";
+    } else {
+      document.getElementById("submenu").style.display = "block";
+      document.getElementById("submenu1").style.display = "none";
     }
-}
-  const Show1 = () =>{
-    if(document.getElementById('submenu1').style.display === 'block'){
-        document.getElementById('submenu1').style.display = 'none';
-        
-    }else{
-      document.getElementById('submenu1').style.display = 'block';
-      document.getElementById('submenu').style.display = 'none';
-        
+  };
+  const Show1 = () => {
+    if (document.getElementById("submenu1").style.display === "block") {
+      document.getElementById("submenu1").style.display = "none";
+    } else {
+      document.getElementById("submenu1").style.display = "block";
+      document.getElementById("submenu").style.display = "none";
     }
-}
+  };
   return (
     <>
       <nav id="navBar" className="w-full fixed top-0 left-0">
@@ -79,39 +73,77 @@ const Navbar = () => {
             }`}
           >
             <div className="md:flex md:mr-20 ">
-
               <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center hover:underline hover:underline-offset-8 hover:decoration-white">
                 <NavLink to="/">HOME</NavLink>
               </li>
               <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center hover:underline hover:underline-offset-8 hover:decoration-white">
                 <NavLink to="/jobs">FIND JOBS</NavLink>
               </li>
-              
+
               <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center relative md:inline-block group">
-                <button className="hover:underline hover:underline-offset-8 hover:decoration-white" onClick={Show}>CANDIDATES</button>
-                <div className="absolute z-1 bg-white shadow-md text-black w-[205px] h-28 hidden md:group-hover:block text-left">
-                  <NavLink className="block mx-4 mt-4 p-2 hover:bg-blue-100/30 rounded-md hover:font-semibold  hover:text-blue-800"  to="/candidate">Candidate List</NavLink>
-                  <NavLink className="block mx-4  p-2 hover:bg-blue-100/30 rounded-md hover:font-medium hover:text-blue-800" to="/candidate-dash">Candidate DashBoard</NavLink>
-                </div>
-          
-                <div id="submenu" className="hidden relative bg-transparent text-white w-full h-auto">
-                  <NavLink className="block mx-4 mt-4 p-2 bg-blue-100/30 rounded-md hover:font-semibold"  to="/employee">Employee List</NavLink>
-                  <NavLink className="block mx-4  p-2 bg-blue-100/30 rounded-md hover:font-medium my-2" to="/employee-dash">Employee DashBoard</NavLink>
-                </div>
+                <Dropdown>
+                  <Dropdown.Toggle
+                    variant="success"
+                    id="dropdown-basic"
+                    onClick={Show}
+                    className="md:relative inline-flex"
+                  >
+                    CANDIDATES
+                    <span class="material-symbols-outlined">expand_more</span>
+                  </Dropdown.Toggle>
+
+                  <div
+                    id="submenu"
+                    className="bg-white text-black h-auto md:w-52 w-full hidden md:absolute rounded-md"
+                  >
+                    <NavLink
+                      to="/candidate"
+                      className=" md:text-left mx-3 mt-3 p-2 hover:bg-blue-100/30 rounded-md hover:font-medium hover:text-blue-800 inline-flex md:float-left w-full md:w-[180px]"
+                    >
+                      Candidate List
+                    </NavLink>
+                    <NavLink
+                      to="/candidate-dash"
+                      className=" md:text-left mx-3 mb-3 p-2 hover:bg-blue-100/30 rounded-md hover:font-medium hover:text-blue-800 inline-flex md:float-left w-full md:w-[180px]"
+                    >
+                      Candidate DashBoard
+                    </NavLink>
+                  </div>
+                </Dropdown>
               </li>
 
               <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center relative md:inline-block group">
-                <button className="hover:underline hover:underline-offset-8 hover:decoration-white"  onClick={Show1}>EMPLOYEES</button>
-                <div className="absolute z-1 bg-white shadow-md text-black w-[205px] h-28 hidden md:group-hover:block text-left">
-                  <NavLink className="block mx-4 mt-4 p-2 hover:bg-blue-100/30 rounded-md hover:font-semibold  hover:text-blue-800"  to="/employee">Employee List</NavLink>
-                  <NavLink className="block mx-4  p-2 hover:bg-blue-100/30 rounded-md hover:font-medium hover:text-blue-800" to="/employee-dash">Employee DashBoard</NavLink>
-                </div>
-                <div id="submenu1" className="hidden bg-transparent text-white w-full h-auto ">
-                  <NavLink className="block mx-4 mt-4 p-2 bg-blue-100/30 rounded-md hover:font-semibold  "  to="/employee">Employee List</NavLink>
-                  <NavLink className="block mx-4  p-2 bg-blue-100/30 rounded-md hover:font-medium my-2" to="/employee-dash">Employee DashBoard</NavLink>
-                </div>
+                <Dropdown>
+                  <Dropdown.Toggle
+                    variant="success"
+                    id="dropdown-basic"
+                    onClick={Show1}
+                    className="md:relative inline-flex"
+                  >
+                    EMPLOYEES
+                    <span class="material-symbols-outlined ">expand_more</span>
+                  </Dropdown.Toggle>
+
+                  <div
+                    id="submenu1"
+                    className="bg-white text-black w-full md:w-52 md:absolute hidden rounded-md"
+                  >
+                    <NavLink
+                      to="/employee"
+                      className=" md:text-left mx-3 mt-3 p-2 hover:bg-blue-100/30 rounded-md hover:font-medium hover:text-blue-800 inline-flex md:float-left w-full md:w-[180px] "
+                    >
+                      Employee List
+                    </NavLink>
+                    <NavLink
+                      to="/employee-dash"
+                      className=" md:text-left mx-3 mb-3 p-2 hover:bg-blue-100/30 rounded-md hover:font-medium hover:text-blue-800 inline-flex md:float-left w-full md:w-[180px]"
+                    >
+                      Employee DashBoard
+                    </NavLink>
+                  </div>
+                </Dropdown>
               </li>
-              
+
               <li className="text-white md:ml-8 text-base md:my-0 my-7 text-center justify-center hover:underline hover:underline-offset-8 hover:decoration-white">
                 <NavLink to="/contact">CONTACT US</NavLink>
               </li>
@@ -131,7 +163,5 @@ const Navbar = () => {
     </>
   );
 };
-
-
 
 export default Navbar;
