@@ -9,7 +9,7 @@ function Company() {
         <div className="w-[16%] fixed">
           <Sidebar />
         </div>
-        <div className="md:p-9 p-5 md:ml-[17%]  ml-4 w-full md:mt-0 mt-9 ">
+        <div className="md:p-10 p-6 md:ml-[17%]  mx-auto w-full md:mt-0 mt-9">
           <p className=" text-2xl font-medium md:text-3xl md:font-semibold ">
             Company Profile!
           </p>
@@ -55,7 +55,9 @@ function Company() {
             {/* ---------------- form start --------------------- */}
 
             <form className=" md:columns-2  h-screen border border-black w-full  mt-5">
-              <div className=" py-5 border border-black ">
+
+              {/* -------- ist column --------------------- */}
+              <div className=" py-5 border border-red-400 ">
                 <div className="flex flex-col">
                   <label className="  font-semibold">
                     Company name (optional)
@@ -68,69 +70,101 @@ function Company() {
                     className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[410px] w-[350px]"
                   />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col mt-5">
                   <label className="  font-semibold">
-                    Company name (optional)
+                  Phone
                   </label>
                   <input
                     type="text"
                     name="name"
-                    placeholder="Invisionn"
+                    placeholder="0 123 456 78900"
                     required=""
                     className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[410px] w-[350px]"
                   />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col mt-5">
                   <label className="  font-semibold">
-                    Company name (optional)
+                  Est. Since
                   </label>
                   <input
                     type="text"
                     name="name"
-                    placeholder="Invisionn"
+                    placeholder="06.04.2020"
+                    required=""
+                    className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[410px] w-[350px]"
+                  />
+                </div>
+                <div className="flex flex-col mt-5">
+                  <label className="  font-semibold">
+                  Est. Since
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="06.04.2020"
                     required=""
                     className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[410px] w-[350px]"
                   />
                 </div>
               </div>
-
+              
+              {/* ------------ 2nd column -------------------- */}
               <div className=" py-5 border border-black ">
                 <div className="flex flex-col">
                   <label className="  font-semibold">
-                    Company name (optional)
+                  Email address
                   </label>
                   <input
                     type="text"
                     name="name"
-                    placeholder="Invisionn"
+                    placeholder="abcd@gmail.com"
                     required=""
                     className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[410px] w-[350px]"
                   />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col mt-5">
                   <label className="  font-semibold">
-                    Company name (optional)
+                  Website
                   </label>
                   <input
                     type="text"
                     name="name"
-                    placeholder="Invisionn"
+                    placeholder="www.invision.com"
                     required=""
                     className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[410px] w-[350px]"
                   />
                 </div>
-                <div className="flex flex-col">
-                  <label className="  font-semibold">
-                    Company name (optional)
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Invisionn"
-                    required=""
-                    className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[410px] w-[350px]"
-                  />
+                <div className="flex flex-col mt-5">
+                <label className="font-semibold">Team Size</label>
+                  <select
+                    name="teamSize"
+                    className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[410px] w-[350px]"
+                    required
+                  >
+                    <option value="">Select team size</option>
+                    <option value="50-100">50-100</option>
+                    <option value="100-150">100-150</option>
+                    <option value="200-250">200-250</option>
+                    <option value="300-350">300-350</option>
+                    <option value="500-1000">500-1000</option>
+                  </select>
                 </div>
+                <div className="flex flex-col mt-5">
+                <label className="font-semibold">Team Size</label>
+                  <select
+                    name="teamSize"
+                    className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[410px] w-[350px]"
+                    required
+                  >
+                    <option value="">Select team size</option>
+                    <option value="50-100">50-100</option>
+                    <option value="100-150">100-150</option>
+                    <option value="200-250">200-250</option>
+                    <option value="300-350">300-350</option>
+                    <option value="500-1000">500-1000</option>
+                  </select>
+                </div>
+
               </div>
 
               
