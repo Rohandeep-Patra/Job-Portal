@@ -43,7 +43,7 @@ function CandidateDashbord() {
       type: "Invision",
       location: "London, UK",
       salary: "45k-50k",
-      time: "12 ago ",
+      time: "12 hours ago ",
 
     },
     {
@@ -79,20 +79,22 @@ function CandidateDashbord() {
 
       <div className='flex bg-slate-100'>
 
-        <div className='w-[16%] fixed'><CandidateSidebar /></div>
-        <div className='md:p-8 p-1   md:ml-[16%]     w-full md:mt-0 mt-9'>
+      <div className=' w-[16%] fixed'><CandidateSidebar /></div>
+        <div className='md:p-9 p-9  md:ml-[16%]  mx-auto  w-full md:mt-0 mt-9'>
           <p className=' text-2xl font-medium md:text-3xl md:font-semibold '>Dashboard Home!</p>
-          <p>Ready to jump back in?</p>
+          <p className='mt-2'>Ready to jump back in?</p>
 
-          <div className='flex-col md:flex-row w-auto flex justify-between gap-0'>
+          
 
-            <div className='inline-flex mt-10  md:w-[270px] h-[120px] w-[405px] bg-white rounded-lg'>
+          <div className='flex-col md:flex-row w-full flex justify-between gap-0'>
+
+            <div className='inline-flex mt-10  md:w-[241px] h-[120px] w-full bg-white rounded-lg'>
 
               <div>
                 <div className='p-4 mt-7 ml-5 text-3xl bg-sky-100 rounded-md text-sky-600'><BsBriefcaseFill /></div>
               </div>
 
-              <div className='md:ml-0 ml-28'>
+              <div className='md:ml-0 mx-auto'>
                 <h4 className='md:ml-18 ml-20 mt-6 text-3xl font-semibold text-sky-600'>22</h4>
                 <p className=' text-2sm ml-12 '>Applied Jobs</p>
 
@@ -102,24 +104,24 @@ function CandidateDashbord() {
 
 
 
-            <div className='inline-flex mt-10  md:w-[270px] h-[120px] w-[405px] bg-white md:ml-5 rounded-lg'>
+            <div className='inline-flex mt-10  md:w-[241px] h-[120px] w-full bg-white md:ml-5 rounded-lg'>
               <div>
                 <div className='p-4 mt-7 ml-7 text-3xl bg-red-100 rounded-md text-red-600'><BsCardText /></div>
               </div>
 
-              <div className='md:ml-0 ml-28'>
+              <div className='md:ml-0 mx-auto'>
                 <h4 className='ml-16 mt-6 text-3xl font-semibold text-red-600'>9382</h4>
                 <p className=' text-2sm ml-16'>Job Alerts</p>
 
               </div>
             </div>
 
-            <div className='inline-flex mt-10  md:w-[270px] h-[120px] w-[405px] bg-white md:ml-5 rounded-md'>
+            <div className='inline-flex mt-10  md:w-[241px] h-[120px] w-full bg-white md:ml-5 rounded-md'>
               <div>
                 <div className='p-4 mt-7 ml-7 text-3xl bg-yellow-100 rounded-md text-yellow-400'><BsChatSquareText /></div>
               </div>
 
-              <div className='md:ml-0 ml-28'>
+              <div className='md:ml-0 mx-auto'>
                 <h4 className='ml-20 mt-6 text-3xl font-semibold text-yellow-400'>74</h4>
                 <p className=' text-2sm ml-16'>Messages</p>
 
@@ -127,12 +129,12 @@ function CandidateDashbord() {
             </div>
 
 
-            <div className='inline-flex mt-10  md:w-[270px] h-[120px] w-[405px] bg-white md:ml-5 rounded-lg'>
+            <div className='inline-flex mt-10  md:w-[241px] h-[120px] w-full bg-white md:ml-5 rounded-lg'>
               <div>
                 <div className='p-4 mt-7 ml-7 text-3xl bg-green-100 rounded-md text-green-500'><BsBookmark /></div>
               </div>
 
-              <div className='md:ml-0 ml-28'>
+              <div className='md:ml-0 mx-auto'>
                 <h4 className='ml-20 mt-6 text-3xl font-semibold text-green-500'>32</h4>
                 <p className=' text-2sm ml-16'>Shortlist</p>
 
@@ -142,11 +144,11 @@ function CandidateDashbord() {
 
           </div>
 
-          <div className='md:w-auto flex-col bg-white mt-8 md:ml-[720px] h-[490px] rounded-lg w-[400px] '>
+          <div className='md:w-auto flex-col bg-white mt-8 md:ml-[720px] h-[510px] rounded-lg w-full'>
 
-            <p className='p-5 ml-3 text-[20px] font-medium'>Notifications</p>
+            <p className='p-5 ml-5 text-[20px] font-medium'>Notifications</p>
 
-            <div className='inline-flex ml-3'>
+            <div className='inline-flex  p-2 ml-5'>
               <div className='mt-1 bg-sky-100 rounded-full h-9 w-9'>
                 <div className='mt-2 ml-[9px] text-sky-700'><TfiBag /></div>
               </div>
@@ -156,7 +158,7 @@ function CandidateDashbord() {
             </div>
 
 
-            <div className='inline-flex ml-3 mt-4 '>
+            <div className='inline-flex p-2 ml-5 '>
               <div className='mt-1 bg-sky-100 rounded-full h-9 w-9'>
                 <div className='mt-2 ml-[9px] text-green-500'><TfiBag /></div>
               </div>
@@ -166,7 +168,7 @@ function CandidateDashbord() {
               </div>
             </div>
 
-            <div className='inline-flex ml-3 mt-4'>
+            <div className='inline-flex p-2 ml-5'>
               <div className='mt-1 bg-sky-100 rounded-full h-9 w-9'>
                 <div className='mt-2 ml-[9px] text-sky-700'><TfiBag /></div>
               </div>
@@ -175,7 +177,7 @@ function CandidateDashbord() {
               </div>
             </div>
 
-            <div className='inline-flex ml-3 mt-4'>
+            <div className='inline-flex p-2 ml-5'>
               <div className='mt-1 bg-green-100 rounded-full h-9 w-9'>
                 <div className='mt-2 ml-[9px] text-green-500'><TfiBag /></div>
               </div>
@@ -184,7 +186,7 @@ function CandidateDashbord() {
               </div>
             </div>
 
-            <div className='inline-flex ml-3 mt-4'>
+            <div className='inline-flex p-2 ml-5'>
               <div className='mt-1 bg-sky-100 rounded-full h-9 w-9'>
                 <div className='mt-2 ml-[9px] text-sky-700'><TfiBag /></div>
               </div>
@@ -193,7 +195,7 @@ function CandidateDashbord() {
               </div>
             </div>
 
-            <div className='inline-flex ml-3 mt-4'>
+            <div className='inline-flex p-2 ml-5'>
               <div className='mt-1 bg-green-100 rounded-full h-9 w-9'>
                 <div className='mt-2 ml-[9px] text-green-500'><TfiBag /></div>
               </div>
@@ -205,7 +207,7 @@ function CandidateDashbord() {
           </div>
 {/* card */}
 
-          <div className='  w-full flex-row  md:p-10 mt-8 md:h-[780px] h-[1410px]  bg-white p-6 '>
+          <div className='  w-full flex-row  md:p-10 mt-8 md:h-[790px] h-auto  bg-white p-6 rounded-lg '>
 
             <div><p className='font-semibold text-[20px]  px-4'>Jobs Applied Recently
             </p></div>
@@ -213,7 +215,7 @@ function CandidateDashbord() {
             <div className='md:flex flex-wrap md:mt-7  mt-5 justify-evenly  '>
 
               {job.map((jobs) => (
-                <div className='  mt-8 md:mt-6 flex h-auto m-3 md:w-[530px] w-full  rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+                <div className='  mt-8 md:mt-6 flex h-auto md:m-3 md:w-[530px] w-full  rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] '>
                   <div className='h-full w-full p-5  '>
                     <div className='h-[68%] w-full  flex '>
                       <div className='  w-[40%] h-full md:w-[20%] flex justify-center items-center overflow-hidden'>
@@ -256,9 +258,9 @@ function CandidateDashbord() {
 
                     </div>
                     <div className=' flex   py-4 md:ml-[100px]'>
-                      <div className='h-[33px] w-24 text-center text-white rounded-full bg-blue-400 mr-2'><p className='pt-1'>full time </p></div>
-                      <div className='h-[33px] w-24 text-center text-white rounded-full bg-blue-400 mr-2'><p className='pt-1'>full time </p></div>
-                      <div className='h-[33px] w-24 text-center text-white rounded-full bg-blue-400 '><p className='pt-1'>full time </p></div>
+                      <div className='h-[33px] w-24 text-center rounded-full bg-blue-200 mr-2'><p className='pt-1'>Full time </p></div>
+                      <div className='h-[33px] w-24 text-center text-black rounded-full bg-lime-200	 mr-2'><p className='pt-1'>Private </p></div>
+                      <div className='h-[33px] w-24 text-center text-g rounded-full bg-yellow-200	'><p className='pt-1'>Urgent</p></div>
                     </div>
                   </div>
 
@@ -272,7 +274,7 @@ function CandidateDashbord() {
 
           </div>
 
-
+          <div className='text-center mt-2'>© 2024 Superio by <button className='text-blue-600			'>ib-themes.</button> All Right Reserved.</div>
         </div>
 
       </div>
