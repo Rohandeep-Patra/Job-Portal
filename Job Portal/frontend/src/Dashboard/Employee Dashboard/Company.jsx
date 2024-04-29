@@ -1,15 +1,28 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import { BsArrowUp } from "react-icons/bs";
+import Nav2 from "../../NavBar/Nav2";
+
+
 
 function Company() {
+
+  
+
   return (
     <>
-      <div className="flex bg-slate-100">
+
+    <div className="relative">
+   <div className="absolute z-50">
+    <Nav2/>
+    </div>
+
+
+      <div className="  mt-20 flex z-49 absolute w-full bg-slate-100">
         <div className="w-[16%] fixed">
           <Sidebar />
         </div>
-        <div className="md:p-10 p-6 md:ml-[17%]  mx-auto w-full md:mt-0 mt-9">
+        <div className="md:p-10 p-6 md:ml-[16%]  mx-auto w-full md:mt-0 mt-9">
           <p className=" text-2xl font-medium md:text-3xl md:font-semibold ">
             Company Profile!
           </p>
@@ -171,6 +184,8 @@ function Company() {
             </form>
           </div>
         </div>
+      </div>
+
       </div>
     </>
   );
