@@ -28,7 +28,7 @@ function CandidateSidebar() {
         <>
             <div className="flex">
 
-                <div className='md:hidden block p-4'><SlMenu /></div>
+                <div className='md:hidden block p-3'><SlMenu /></div>
 
                 <div className=' hidden md:block bg-white h-screen  p-2  relative'>
 
@@ -95,7 +95,7 @@ function CandidateSidebar() {
                             </div>
                         </NavLink>
                         <NavLink to={"/candidate-dash/changePassword"} className={"nav"}>
-                            <div className='flex hover:bg-salate-200 w-25 h-10 rounded-md mt-3 group mr-2'>
+                            <div className='flex hover:bg-slate-200 w-25 h-10 rounded-md mt-3 group mr-2'>
                                 <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
                                 <CiLock />
 

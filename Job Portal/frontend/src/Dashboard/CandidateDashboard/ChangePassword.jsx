@@ -7,26 +7,37 @@ function ChangePassword() {
       <div className='flex  bg-slate-200'>
         <div className=' w-[16%] fixed'><CandidateSidebar /></div>
 
-        <div className='  flex md:p-9 md:ml-[16%] mx-auto ' >
-
-          {/* <div className='bg-slate-200 h-auto w-full md:w-[1500px]  '> */}
-           <div className=' '> 
-           <p className=' text-[30px]  font-semibold  mt-2 ' >Change Password!</p>
+        <div className='  md:p-9 p-9  md:ml-[16%]  mx-auto  w-full md:mt-0 mt-9   ' >
+            <p className=' text-2xl font-medium md:text-3xl md:font-semibold' >Change Password!</p>
             <p className=' mt-2' >Ready to jump back in?</p>
-           </div>
-           <div className='bg-white  mt-8 '>
 
-           </div>
 
-            {/* <div className='md:h-[700px]   h-auto w-full  md:w-[1200px] md:ml-1 md:mt-[65px] bg-neutral-100 shadow-2xl rounded-md	border border-black	'>
-              <p className='md:mt-6 text-[20px] p-7  font-semibold '>Change Password</p>
-            </div> */}
-            {/* <input type="text" className='bg-black'/> */}
-          {/* </div> */}
+            <div className='md:h-[6 00px] md:w-[1200px] bg-slate-100	 h-[600px] w-full mt-10 rounded-lg'>
+
+              <p className='text-[20px] font-mono  font-semibold  p-7 ' >Change Password</p>
+
+              <div className='p-7'>
+             
+                 <p className='font-semibold '>Old Password</p>
+                <input className=' bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5' type='password' /> 
+
+                 <p className='font-semibold mt-8 '>New Password</p>
+                <input className=' bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5' type='password' /> 
+
+                 <p className='font-semibold mt-8'>Confirm Password</p>
+                <input className=' bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5' type='password' /> 
+
+              </div> 
+              <button className='bg-blue-700 h-[50px] w-[150px] mx-7 rounded-[10px]	 mt-4 text-white text-center text-mono'>Update</button>
+            </div>
+            <div className='text-center mt-8'>© 2024 Superio by <button className='text-blue-600			'>ib-themes.</button> All Right Reserved.</div>
+
+          </div>
+
 
         </div>
 
-      </div>
+     
     </>
   )
 }
