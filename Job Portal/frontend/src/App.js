@@ -5,12 +5,14 @@ import FindJobs from './Find Jobs/FindJobs';
 import Candidates from './Candidates/Candidates';
 import Employees from './Employees/Employees';
 import Contact from './Contact Us/Contact';
+// EmployeeDashbord
 import Dash from './Dashboard/Employee Dashboard/Dash';
 import Company from './Dashboard/Employee Dashboard/Company';
 import Postnewjob from './Dashboard/Employee Dashboard/Postnewjob';
 import Manage from './Dashboard/Employee Dashboard/Manage';
 import Short from './Dashboard/Employee Dashboard/Short';
 import Applicants from './Dashboard/Employee Dashboard/Applicants';
+// CandidateDashbord
 import CandidateDashbord from './Dashboard/CandidateDashboard/CandidateDashboard';
 import Myprofile from './Dashboard/CandidateDashboard/Myprofile';
 import MyResume from './Dashboard/CandidateDashboard/MyResume';
@@ -46,9 +48,9 @@ function App() {
         <Route exact path='/candidate-dash/jobAlerts' element={<JobAlerts/>}/>
         <Route exact path='/candidate-dash/candidateshort' element={<CandidateShort/>}/>
         <Route exact path='/candidate-dash/changePassword' element={<ChangePassword/>}/>
+        {/* <Route exact path='/employee-dash/short' element={<Short/>}/>
         <Route exact path='/employee-dash/short' element={<Short/>}/>
-        <Route exact path='/employee-dash/short' element={<Short/>}/>
-        <Route exact path='/employee-dash/short' element={<Short/>}/>
+        <Route exact path='/employee-dash/short' element={<Short/>}/> */}
      
       </Routes>
     </>
