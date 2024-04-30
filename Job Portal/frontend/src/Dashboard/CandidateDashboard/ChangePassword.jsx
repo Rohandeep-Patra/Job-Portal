@@ -12,20 +12,20 @@ function ChangePassword() {
             <p className=' mt-2' >Ready to jump back in?</p>
 
 
-            <div className='md:h-[6 00px] md:w-[1200px] bg-slate-100	 h-[600px] w-full mt-10 rounded-lg'>
+            <div className='md:h-[600px] md:w-[1200px] bg-slate-100	 h-[600px] w-full mt-10 rounded-lg'>
 
               <p className='text-[20px] font-mono  font-semibold  p-7 ' >Change Password</p>
 
               <div className='p-7'>
              
                  <p className='font-semibold '>Old Password</p>
-                <input className=' bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5' type='password' /> 
+                <input placeholder='**********' className=' bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5 p-3 focus:outline-blue-500' type='text' /> 
 
                  <p className='font-semibold mt-8 '>New Password</p>
-                <input className=' bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5' type='password' /> 
+                <input  placeholder='***********' className='bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5 p-3 focus:outline-blue-500' type='text' /> 
 
                  <p className='font-semibold mt-8'>Confirm Password</p>
-                <input className=' bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5' type='password' /> 
+                <input  placeholder='***********' className=' bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5 p-3 focus:outline-blue-500' type='text' /> 
 
               </div> 
               <button className='bg-blue-700 h-[50px] w-[150px] mx-7 rounded-[10px]	 mt-4 text-white text-center text-mono'>Update</button>
