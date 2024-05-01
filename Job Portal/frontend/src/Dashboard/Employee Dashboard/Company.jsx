@@ -4,6 +4,7 @@ import { BsArrowUp } from "react-icons/bs";
 import Nav2 from "../../NavBar/Nav2";
 
 import Select from "react-select";
+import { NavLink } from "react-router-dom";
 
 // -------- for multiple seleting options---------
 const options = [
@@ -38,8 +39,9 @@ function Company() {
             </p>
             <p className="mt-3">Ready to jump back in?</p>
 
-            <div className="md:flex flex-col p-9 bg-white md:h-[1300px] h-[2000px] w-auto mt-8 rounded-lg ">
-              <p className="font-semibold  text-lg md:mt-3 ">My Profile</p>
+            {/* --------first form-------- */}
+            <div className="md:flex flex-col p-9 bg-white md:h-[1350px] h-[1870px] w-auto mt-8 rounded-lg ">
+              <p className="font-semibold  text-lg ">My Profile</p>
 
               {/* ------------ ist row------------------ */}
               <div className="md:flex  mt-6 ">
@@ -77,7 +79,7 @@ function Company() {
 
               {/* ---------------- form start --------------------- */}
 
-              <form className=" md:columns-2  h-[850px]  w-full  mt-5 border border-black">
+              <form className="md:flex  h-[850px]  w-full  mt-5 ">
                 {/* -------- ist column --------------------- */}
                 <div className=" py-5  ">
                   <div className="flex flex-col">
@@ -128,7 +130,7 @@ function Company() {
                 </div>
 
                 {/* ------------ 2nd column -------------------- */}
-                <div className=" py-5  md:ml-3">
+                <div className=" py-5 md:ml-14">
                   <div className="flex flex-col">
                     <label className="  font-semibold">Email address</label>
                     <input
@@ -190,8 +192,193 @@ function Company() {
                 />
               </div>
 
+              <div className="justify-center flex mt-5 bg-blue-600 w-32  md:h-24 h-10 rounded-lg ">
+                <NavLink className="flex p-2 text-[18px] text-white"> Save </NavLink>
+              </div>
+
 
             </div>
+
+            {/* -----2nd form---------- */}
+            <div className="md:flex flex-col p-7 bg-white md:h-[400px] h-[580px] w-auto mt-8 rounded-lg">
+              <p className="font-semibold  text-lg ">Social Network</p>
+              <form className="md:flex h-auto  w-full  mt-5 ">
+                <div className="py-5 ">
+                <div className="flex flex-col ">
+                    <label className="  font-semibold">Facebook</label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="www.facebook.com"
+                      required=""
+                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                    />
+                  </div>
+                <div className="flex flex-col  ">
+                    <label className="  font-semibold mt-4">Linkedin</label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="www.linkedin.com"
+                      required=""
+                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                    />
+                  </div>
+                </div>
+                <div className="md:py-5 md:ml-14">
+                <div className="flex flex-col ">
+                    <label className="  font-semibold">Twitter</label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="www.twitter.com"
+                      required=""
+                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                    />
+                  </div>
+                <div className="flex flex-col ">
+                    <label className="  font-semibold mt-4">Google Plus</label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder=""
+                      required=""
+                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                    />
+                  </div>
+                </div>
+
+              </form>
+              <div className="justify-center flex mt-5 bg-blue-600 w-32  md:h-12 h-10 rounded-lg ">
+                <NavLink className="flex p-2 text-[18px] text-white"> Save </NavLink>
+              </div>
+
+                
+
+
+            </div>
+
+            {/* ------3rd form--------- */}
+            <div className="md:flex flex-col p-7 bg-white md:h-[600px] h-[610px] w-auto mt-8 rounded-lg">
+              <p className="font-semibold  text-lg ">Contact Information</p>
+              <form className="md:flex h-auto  w-full  mt-5 ">
+                <div className="">
+                <div className="flex flex-col mt-5">
+                    <label className="font-semibold">Country</label>
+                    <select
+                      name="teamSize"
+                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                      required
+                    >
+                      <option value="">Select Your Country</option>
+                      <option value="India">India</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Japan">Japan</option>
+                      <option value="China">China</option>
+                      <option value="USA">USA</option>
+                    </select>
+                  </div>
+               
+                </div>
+                <div className=" md:ml-14">
+                <div className="flex flex-col mt-5">
+                    <label className="font-semibold">City</label>
+                    <select
+                      name="teamSize"
+                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[475px] w-full"
+                      required
+                    >
+                      <option value="">Select Your City</option>
+                      <option value="Melborne">Melborne</option>
+                      <option value="Kolkata">Kolkata</option>
+                      <option value="Bangalore">Bangalore</option>
+                      <option value="China">China</option>
+                      <option value="USA">USA</option>
+                    </select>
+                  </div>
+               
+                </div >
+              
+
+              </form>
+
+              <div className="flex flex-col mt-6">
+                    <label className="  font-semibold">
+                    Complete Address
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Write Full Address"
+                      required=""
+                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12  w-full"
+                    />
+                  </div>
+
+                  <div className="flex">
+                  <div className="flex flex-col mt-6">
+                    <label className="  font-semibold">
+                    Find On Map
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="point here"
+                      required=""
+                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                    />
+                  </div>
+                  <div className="flex flex-col mt-6 md:ml-6">
+                    <label className="  font-semibold">
+                    Latitude
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="point here"
+                      required=""
+                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[245px] w-full"
+                    />
+                  </div>
+                  <div className="flex flex-col mt-6 md:ml-6">
+                    <label className="  font-semibold">
+                    Longitude
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="point here"
+                      required=""
+                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[240px] w-full"
+                    />
+                  </div>
+                  </div>
+
+                  <div className="justify-center flex mt-5 bg-blue-800 w-36 hover:bg-sky-100 md:h-12 h-10 rounded-lg transition duration-800">
+                <NavLink className="flex p-3 text-[14px] text-white hover:text-blue-700"> Search Location </NavLink>
+
+              </div>
+
+
+
+              <div className="justify-center flex mt-5 bg-blue-600 w-32  md:h-12 h-10 rounded-lg ">
+                <NavLink className="flex p-2 text-[18px] text-white"> Save </NavLink>
+              </div>
+
+                
+
+
+            </div>
+
+
+
+
+
+            {/* ------------footer--------- */}
+            <div className='flex justify-center mt-4'>
+            <p className='text-slate-500 text-sm'>© 2024 Superio by <button className='text-blue-600'>ib-themes.</button> All Rights Reserved.</p>
+            </div>
+
           </div>
         </div>
       </div>
