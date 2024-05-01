@@ -8,12 +8,13 @@ import { NavLink } from "react-router-dom";
 
 // -------- for multiple seleting options---------
 const options = [
-  { value: "abc", label: "abc" },
-  { value: "abc", label: "abc" },
-  { value: "ac", label: "ac" },
-  { value: "abc", label: "abc" },
-  { value: "abc", label: "abc" },
-  { value: "abc", label: "abc" },
+  { value: "Banking", label: "Banking" },
+  { value: "Digital & Creative", label: "Digital & Creative" },
+  { value: "Retail", label: "Retail" },
+  { value: "Human Resourses", label: "Human Resourses" },
+  { value: "Management", label: "Management" },
+  { value: "Digital", label: "Digital" },
+  { value: "Creative Art", label: "Creative Art" },
 ];
 
 function Company() {
@@ -115,7 +116,7 @@ function Company() {
                     />
                   </div>
                   <div className="flex flex-col mt-5">
-                    <label className="  font-semibold">
+                    <label className="font-semibold">
                       Multiple Select boxes
                     </label>
 
