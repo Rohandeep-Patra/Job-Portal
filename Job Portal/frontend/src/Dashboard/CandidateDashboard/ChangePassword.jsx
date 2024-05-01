@@ -19,13 +19,13 @@ function ChangePassword() {
               <div className='p-7'>
              
                  <p className='font-semibold '>Old Password</p>
-                <input placeholder='**********' className=' bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5 p-3 focus:outline-blue-500' type='text' /> 
+                <input placeholder='**********' className=' bg-slate-300 rounded-[7px] h-[50px]  w-full md:w-[600px] mt-5 p-3 focus:outline-blue-500' type='text' /> 
 
                  <p className='font-semibold mt-8 '>New Password</p>
-                <input  placeholder='***********' className='bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5 p-3 focus:outline-blue-500' type='text' /> 
+                <input  placeholder='***********' className='bg-slate-300 rounded-[7px] h-[50px]  w-full md:w-[600px] mt-5 p-3 focus:outline-blue-500' type='text' /> 
 
                  <p className='font-semibold mt-8'>Confirm Password</p>
-                <input  placeholder='***********' className=' bg-slate-300 rounded-[7px] h-[50px]  w-[400px] md:w-[600px] mt-5 p-3 focus:outline-blue-500' type='text' /> 
+                <input  placeholder='***********' className=' bg-slate-300 rounded-[7px] h-[50px]  w-full md:w-[600px] mt-5 p-3 focus:outline-blue-500' type='text' /> 
 
               </div> 
               <button className='bg-blue-700 h-[50px] w-[150px] mx-7 rounded-[10px]	 mt-4 text-white text-center text-mono'>Update</button>
