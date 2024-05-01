@@ -372,7 +372,7 @@ function CandidateDashboard() {
             </div>
 
           </div>
-          {/* card */}
+          {/*............  job card ........................*/}
 
           <div className='  w-full flex-row  md:p-10 mt-8 md:h-[790px] h-auto  bg-white p-6 rounded-lg '>
 
