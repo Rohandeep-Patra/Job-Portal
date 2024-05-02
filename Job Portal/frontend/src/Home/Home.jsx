@@ -530,9 +530,9 @@ const Home = () => {
               to recruiters in a targeted company to broaden your network.
             </p>
             <div className="flex justify-center md:justify-start">
-              <button className="bg-blue-500 text-white mt-8 h-14 w-36 rounded-md border-2 font-medium border-blue-500 hover:bg-transparent hover:text-blue-600 hover:duration-500 ">
+              <NavLink to="/candidate-dash/myResume" className="bg-blue-500 text-white mt-8 h-14 w-36 flex items-center text-center justify-center font-poppins rounded-md border-2 font-medium border-blue-500 hover:bg-transparent hover:text-blue-600 hover:duration-500 ">
                 Post Resume
-              </button>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -804,9 +804,9 @@ const Home = () => {
               <p className="ml-3">But I must explain to you how all this</p>
             </div>
             <div className="flex justify-center md:justify-start">
-              <button className="bg-blue-500 text-white mt-8 h-14 w-36 rounded-md border-2 font-medium border-blue-500 hover:bg-transparent hover:text-blue-600 hover:duration-500 ">
+              <NavLink to="/jobs" className="bg-blue-500 text-white flex justify-center items-center mt-8 h-14 w-36 rounded-md border-2 font-medium border-blue-500 hover:bg-transparent hover:text-blue-600 hover:duration-500 ">
                 Get Started
-              </button>
+              </NavLink>
             </div>
 
             <div className="bg-white border border-slate-200 rounded-md h-40 w-72 relative flex flex-col md:right-[350px] md:top-16 items-center sm:hidden md:block">
@@ -928,7 +928,7 @@ const Home = () => {
               className=" sm:h-[72px] md:h-20 md:w-[550px] sm:w-[400px] pl-10 rounded-md focus:outline-none sm:mt-10 md:mt-0"
               placeholder="Your e-mail"
             />
-            <button className="bg-blue-700 text-white h-16 md:w-36 sm:w-full rounded-md md:absolute top-2 left-[420px] sm:mt-3 md:mt-0">
+            <button className="bg-sky-400 hover:bg-blue-600 hover:duration-500 text-white h-16 md:w-36 sm:w-full rounded-md md:absolute top-2 left-[420px] sm:mt-3 md:mt-0">
               Subscribe
             </button>
           </div>
