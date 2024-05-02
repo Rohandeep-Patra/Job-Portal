@@ -4,6 +4,19 @@ import CandidateSidebar from './CandidateSidebar'
 function MyResume() {
   return (
     <>
+    
+
+
+
+
+
+
+
+
+
+
+
+    {/* ..........code......... */}
       <div className='flex  bg-slate-200'>
         <div className=' w-[16%] fixed'><CandidateSidebar /></div>
 

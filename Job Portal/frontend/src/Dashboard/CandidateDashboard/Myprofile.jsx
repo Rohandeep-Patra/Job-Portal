@@ -6,6 +6,9 @@ function Myprofile() {
   return (
 
     <>
+
+
+
       <div className='flex  bg-slate-200'>
         <div className=' w-[16%] fixed'><CandidateSidebar /></div>
 
@@ -14,7 +17,7 @@ function Myprofile() {
           <p className=' text-2xl font-medium md:text-3xl md:font-semibold' >My Profile!</p>
           <p className=' mt-2' >Ready to jump back in?</p>
 
-          <div className="md: flex flex-col p-5 bg-white h-[2330px] md:h-[1500px] w-auto mt-8 rounded-lg">
+          <div className="md: flex flex-col p-5 bg-white h-[2340px] md:h-[1530px] w-auto mt-8 rounded-lg">
             <p className="font-semibold  text-[20px] md:mt-3 p-3 md:ml-5   ">My Profile</p>
 
             <div className="md:flex  mt-6 shadow-b-black ">
@@ -31,7 +34,7 @@ function Myprofile() {
                 Max file size is 1MB, Minimum dimension: 330x300 And Suitable files are .jpg & .png
               </div>
             </div>
-            {/* <div className='h-[2px] w-[1200px] bg-slate-100 md:mt-12   '></div> */}
+
 
 
             {/* from start */}
@@ -193,7 +196,7 @@ function Myprofile() {
               {/* ........ Description.......... */}
 
               <div className='md:p-8 p-3 md:mt-5'>
-                <p className='font-semibold'> Description</p>
+                <p className='font-semibold p-5'> Description</p>
                 <textarea
                   type='text'
                   placeholder='write your self some things'
@@ -206,12 +209,104 @@ function Myprofile() {
           </div>
           {/* .............Social Network.............. */}
 
-          <div className='md: flex flex-col p-5 bg-white h-[1000px] md:h-[500px] w-auto mt-8 rounded-lg'>
-          <p className="font-semibold  text-[20px] md:mt-2 p-3 md:ml-5   ">Social Network</p>
-          </div>
-        </div>
+          <div className='md: flex flex-col p-5 bg-white h-[700px] md:h-[480px] w-auto mt-5 rounded-lg'>
+            <p className="font-semibold  text-[20px] md:mt-2 p-3 md:ml-5   ">Social Network</p>
+            <div>
+              <from className=" md:flex h-[300px]    w-full md:mt-3 " >
+                {/* ..............1st-col......... */}
+                <div className=' py-3 md:ml-6  w-full md:w-[550px] '>
+                  <div className='p-4'>
+                    <p className='font-semibold'>Facebook</p>
+                    <input
+                      type='text'
+                      placeholder='www.facebook.com'
+                      className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                    />
+                  </div>
+                  <div className='p-4'>
+                    <p className='font-semibold'>Linkedin</p>
+                    <input
+                      type='text'
 
-      </div>
+                      className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                    />
+                  </div>
+
+                </div>
+                {/* ...........2nd-col......... */}
+                <div className=' py-1  md:ml-9	w- full md:w-[550px]  '>
+                  <div className='p-4'>
+                    <p className='font-semibold'>Twitter</p>
+                    <input
+                      type='text'
+
+                      className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                    />
+                  </div>
+                  <div className='p-4'>
+                    <p className='font-semibold'>Google Plus</p>
+                    <input
+                      type='text'
+
+                      className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                    />
+                  </div>
+
+                </div>
+
+              </from>
+              <button className='bg-blue-700 h-[50px] w-[150px]  ml-3 md:ml-10 rounded-[10px]	 text-white text-center text-mono'>Save</button>
+            </div>
+          </div>
+
+          {/* .............Contact Information........... */}
+          <div className='md: flex flex-col p-5 bg-white  border border-black h-[1000px] md:h-[480px] w-auto mt-5 rounded-lg'>
+            <p className="font-semibold  text-[20px] md:mt-1 p-3 md:ml-5   ">Contact Information</p>
+
+            <div className='flex '>
+              <from className=" md:flex h-[300px] border border-black   w-full md:mt-3 " >
+                {/* ..........1st col......... */}
+                <div className=' py-3 md:ml-6   w-full md:w-[550px] '>
+                  <div className='p-4'>
+                    <p className='font-semibold'>Country</p>
+                    <select className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
+                      name="salary"
+                    >
+                      <option value="">India</option>
+                      <option value="Yes">Australia </option>
+                      <option value="No">Japan </option>
+                      <option value="No">pakistan </option>
+                      <option value="No">Chaina </option>
+
+                    </select>
+                  </div>
+
+                </div>
+                {/* .........2nd-col....... */}
+                <div className=' py-1  md:ml-9	 w- full md:w-[550px]'>
+                  <div className='p-4'>
+                    <p className='font-semibold'>City</p>
+                    <select className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
+                      name="salary"
+                    >
+                      <option value="">Melbourne</option>
+                      <option value="Yes">Australia </option>
+                      <option value="No">Japan </option>
+                      <option value="No">pakistan </option>
+                      <option value="No">Chaina </option>
+
+                    </select>
+                  </div>
+                </div>
+
+              </from>
+
+            </div>
+
+          </div>
+
+        </div >
+      </div >
     </>
   )
 }
