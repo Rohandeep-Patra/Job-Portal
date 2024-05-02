@@ -115,7 +115,7 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <NavLink className=" ml-[272px] text-white md:mt-6 flex">
+                <NavLink to="/candidate-dash/myResume" className=" ml-[272px] text-white md:mt-6 flex">
                   <span class="material-symbols-outlined ">upload_file</span>
                   <p>Upload Your CV</p>
                 </NavLink>
