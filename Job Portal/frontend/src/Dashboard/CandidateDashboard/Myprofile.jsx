@@ -13,11 +13,11 @@ function Myprofile() {
         </div>
 
         {/* ............code........ */}
-        <div className='flex  bg-slate-200'>
-          <div className=' w-[16%] fixed mt-5 '><CandidateSidebar /></div>
+        <div className='flex  bg-slate-200 mt-20'>
+          <div className=' w-[16%] fixed  '><CandidateSidebar /></div>
 
 
-          <div className='  md:p-9 p-7 md:ml-[15%]  mx-auto  w-full mt-16   ' >
+          <div className='  md:p-9 p-7 md:ml-[15%]  mx-auto  w-full   ' >
             <p className=' text-2xl font-medium md:text-3xl md:font-semibold' >My Profile!</p>
             <p className=' mt-2' >Ready to jump back in?</p>
 
