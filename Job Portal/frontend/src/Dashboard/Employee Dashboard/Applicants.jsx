@@ -117,7 +117,7 @@ function Applicants() {
                   <NavLink className="bg-sky-200 text-sm">Total(s): 6</NavLink>
                 </div>
                 <div className="p-3 ml-28 font-semibold text-blue-700 text-[16px] md:block hidden  ">
-                  <NavLink className="text-green-700">Approved: 2</NavLink>
+                  <NavLink className=" text-green-500">Approved: 2</NavLink>
                 </div>
                 <div className="p-3 ml-28 font-semibold text-blue-700 text-[16px] md:block hidden  ">
                   <NavLink className="text-red-700">Rejected(s): 4</NavLink>
