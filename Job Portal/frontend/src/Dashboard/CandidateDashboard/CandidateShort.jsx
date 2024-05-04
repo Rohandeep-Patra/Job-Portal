@@ -61,6 +61,9 @@ function CandidateShort() {
                 <div className="p-3 ml-28 font-semibold text-blue-600 text-[16px] md:block hidden font-serif	 mt-2">
                   Action
                 </div>
+                <div className="p-3 ml-28 font-semibold text-blue-600 text-[16px] md:block hidden font-serif	 mt-2">
+                  Action
+                </div>
               </div>
 
 
