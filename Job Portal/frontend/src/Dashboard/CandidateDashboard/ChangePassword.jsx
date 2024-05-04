@@ -1,13 +1,19 @@
 import React from 'react'
 import CandidateSidebar from './CandidateSidebar'
+import Nav2 from '../../NavBar/Nav2'
 
 function ChangePassword() {
   return (
     <>
-      <div className='flex  bg-slate-200'>
-        <div className=' w-[16%] fixed'><CandidateSidebar /></div>
+    {/* NavBar */}
+    <div className='relative'>
 
-        <div className='  md:p-9 p-9  md:ml-[16%]  mx-auto  w-full md:mt-0 mt-9   ' >
+      <div className='absolute z-50'><Nav2/></div>
+      {/* code */}
+      <div className='flex  bg-slate-200 mt-20'>
+        <div className=' w-[16%] fixed '><CandidateSidebar /></div>
+
+        <div className='  md:p-9 p-9  md:ml-[16%]  mx-auto  w-full   ' >
             <p className=' text-2xl font-medium md:text-3xl md:font-semibold' >Change Password!</p>
             <p className=' mt-2' >Ready to jump back in?</p>
 
@@ -35,6 +41,7 @@ function ChangePassword() {
           </div>
 
 
+        </div>
         </div>
 
      
