@@ -53,7 +53,7 @@ function CandidateSidebar() {
                                     <CgProfile />
 
                                 </div>
-                                <h1 className='text-sm p-2 group-hover:text-blue-500'>My profile</h1>
+                                <h1 className='text-1sm p-2 group-hover:text-blue-500'>My Profile</h1>
                             </div>
                         </NavLink>
                         <NavLink to={"/candidate-dash/myResume"} className={"nav"}>
@@ -62,7 +62,7 @@ function CandidateSidebar() {
                                     <FaRegFileAlt />
 
                                 </div>
-                                <h1 className='text-1sm p-2 group-hover:text-blue-500'>MyResume</h1>
+                                <h1 className='text-1sm p-2 group-hover:text-blue-500'>My Resume</h1>
                             </div>
 
                         </NavLink>
@@ -72,7 +72,7 @@ function CandidateSidebar() {
                                     <IoBagRemoveOutline />
 
                                 </div>
-                                <h1 className="text-1sm p-2 group-hover:text-blue-500"> AppliedJob</h1>
+                                <h1 className="text-1sm p-2 group-hover:text-blue-500"> Applied Job</h1>
                             </div>
                         </NavLink>
                         <NavLink to={"/candidate-dash/jobAlerts"} className={"nav"}>
@@ -82,7 +82,7 @@ function CandidateSidebar() {
                                     <LuBellRing />
 
                                 </div>
-                                <h1 className='text-1sm p-2 group-hover:text-blue-500'>JobAlerts</h1>
+                                <h1 className='text-1sm p-2 group-hover:text-blue-500'>Job Alerts</h1>
                             </div>
                         </NavLink>
                         <NavLink to={"/candidate-dash/candidateshort"} className={"nav"}>
@@ -101,7 +101,7 @@ function CandidateSidebar() {
 
 
                                 </div>
-                                <h1 className='text-1sm p-2 group-hover:text-blue-500'> ChangePassword</h1>
+                                <h1 className='text-1sm p-2 group-hover:text-blue-500'> Change Password</h1>
                             </div>
                         </NavLink>
 
