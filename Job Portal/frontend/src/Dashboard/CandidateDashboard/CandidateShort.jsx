@@ -104,7 +104,7 @@ function CandidateShort() {
               {/* .........Job Title...... */}
 
               {job.map((jobs) =>
-                <div className=' w-full h-[150px] mt-4 flex shadow '>
+                <div className=' w-full h-[150px] mt-4 flex shadow-sm'>
 
                   <div className=' h-[100px] md:w-[310px] w-[290px]  '>
 

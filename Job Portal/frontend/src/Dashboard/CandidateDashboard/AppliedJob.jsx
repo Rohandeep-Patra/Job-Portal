@@ -10,38 +10,38 @@ function AppliedJob() {
       image: "https://superio-reactjs.ibthemespro.com/images/resource/company-logo/1-3.png",
       name: "Product Manager, Studios",
       location: "London, UK",
-      date: "October 27, 2017 April 25, 2011",
+      date: "Dec 5, 2020",
       status: "active",
     },
     {
       image: "https://superio-reactjs.ibthemespro.com/images/resource/company-logo/1-6.png",
       name: "Web Developer",
       location: "London, UK",
-      date: "October 27, 2017 April 25, 2011",
+      date: "Dec 5, 2020",
       status: "active",
     },
     {
       image: "https://superio-reactjs.ibthemespro.com/images/resource/company-logo/1-4.png",
       name: "Senior Product Designer",
       location: "London, UK",
-      date: "October 27, 2017 April 25, 2011",
+      date: "Dec 5, 2020",
       status: "active",
     },
     {
       image: "https://superio-reactjs.ibthemespro.com/images/resource/company-logo/2-1.png",
       name: "Software Engineer",
       location: "London, UK",
-      date: "October 27, 2017 April 25, 2011",
+      date: "Dec 5, 2020",
       status: "active",
     },
 
   ]
   return (
     <>
-     {/* ....NavBar....... */}
-     <div className='relative'>
+      {/* ....NavBar....... */}
+      <div className='relative'>
         <div className='absolute z-50'>
-         <Nav2/>
+          <Nav2 />
         </div>
 
         {/* sidebar */}
@@ -58,7 +58,7 @@ function AppliedJob() {
 
             {/* from */}
 
-            <div className='md:flex flex-col p-5 bg-white md:h-[760px] h-[890px] w-auto mt-8 rounded-lg '>
+            <div className='md:flex flex-col p-5 bg-white md:h-[830px] h-[890px] w-auto mt-8 rounded-lg '>
 
               <div className='md:flex'>
                 <p className="font-semibold  text-lg">My Favorite Jobs</p>
@@ -95,7 +95,7 @@ function AppliedJob() {
               {/* .........Job Title...... */}
 
               {job.map((jobs) =>
-                <div className=' w-full h-[150px] mt-4 flex shadow '>
+                <div className=' w-full h-[150px] mt-4 flex shadow-sm '>
 
                   <div className=' h-[100px] md:w-[310px] w-[290px]  '>
 
@@ -106,8 +106,8 @@ function AppliedJob() {
 
 
                       <div className=' ml-3  '>
-                        
-<NavLink className="className=text-[17px] md:text-[18px] font-semibold whitespace-nowrap hover:text-blue-600"> {jobs.name}</NavLink>
+
+                        <NavLink className="className=text-[17px] md:text-[18px] font-semibold whitespace-nowrap hover:text-blue-600"> {jobs.name}</NavLink>
                         {/* ..... */}
 
                         <div className='md:flex  md:mt-4 mt-2'>
@@ -137,11 +137,11 @@ function AppliedJob() {
 
                   {/* .........Date Applied.... */}
                   <div className='hidden lg:block h-[50px] w-[100px] ml-10 mt-2 font-serif'>
-                    <p className='font-serif'>Dec 5, 2020</p>
+                    <p className='font-serif'>{jobs.date}</p>
                   </div>
 
-                  <div className=' h-[50px] w-[100px]  md:mt-2 mt-10  font-serif md:ml-[260px] ml-[88px]'>
-                    <p className=' font-semibold font-serif text-green-500'>Active</p>
+                  <div className=' h-[50px] w-[100px]  md:mt-2 mt-10  font-serif md:ml-[220px] ml-[88px]'>
+                    <p className=' font-semibold font-serif text-green-500'>{jobs.status}</p>
                   </div>
 
                   <div className='hidden lg:block h-[50px] w-[200px] ml-[180px] mt-2 '>
