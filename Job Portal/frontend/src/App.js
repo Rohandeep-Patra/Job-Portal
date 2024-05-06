@@ -23,6 +23,7 @@ import AppliedJob from './Dashboard/CandidateDashboard/AppliedJob';
 import JobAlerts from './Dashboard/CandidateDashboard/JobAlerts';
 import CandidateShort from './Dashboard/CandidateDashboard/CandidateShort';
 import ChangePassword from './Dashboard/CandidateDashboard/ChangePassword';
+import Login from './Login And Registration/Login';
 
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route exact path='/candidate' element={<Candidates/>}/>
         <Route exact path='/employee' element={<Employees/>}/>
         <Route exact path='/contact' element={<Contact/>}/>
+        <Route exact path='/login' element={<Login/>}/>
 
        
         {/* Employee */}
