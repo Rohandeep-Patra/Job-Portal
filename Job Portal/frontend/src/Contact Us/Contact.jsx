@@ -92,11 +92,7 @@ const Contact = () => {
 
                 <div className="mt-6 flex flex-col">
                   <label>Message</label>
-                  <input
-                    className=" focus:outline-none rounded-lg w-full mt-3 bg-slate-200/40 h-44 relative placeholder:absolute placeholder:top-4 placeholder:left-5 "
-                    type="text"
-                    placeholder="Write Your Message..."
-                  />
+                  <textarea className="focus:outline-none p-5 rounded-lg w-full mt-3 bg-slate-200/40 h-48 resize-none" placeholder="Enter Your Message.."/>
                 </div>
 
                 <button className="w-full h-16 mt-8 bg-blue-500 rounded-lg text-white hover:bg-blue-700 hover:duration-500 mb-10">

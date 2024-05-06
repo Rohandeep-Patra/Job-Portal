@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@flaticon/flaticon-uicons": "^3.2.1",
+    "@fluentui/react-components": "^9.49.2",
     "@react-email/link": "0.0.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -18,6 +19,8 @@
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "react-select": "^5.8.0",
+    "reactjs-popup": "^2.0.6",
+    "styled-components": "^6.1.9",
     "swiper": "^11.1.1",
     "web-vitals": "^2.1.4"
   },
