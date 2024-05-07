@@ -13,11 +13,11 @@ function Manage() {
     {
       image:
         "https://superio-reactjs.ibthemespro.com/images/resource/company-logo/1-1.png",
-      name: "Software Engineer (Android), Libraries",
+      name: "Software Engineer (Android)",
       location: "London, UK",
       appli: "3+ Applied",
       date: "October 27, 2017 April 25, 2011",
-      status: "active",
+      status: "Active",
     },
     {
       image:
@@ -26,7 +26,7 @@ function Manage() {
       location: "London, UK",
       appli: "3+ Applied",
       date: "October 27, 2017 April 25, 2011",
-      status: "active",
+      status: "Active",
     },
     {
       image:
@@ -35,7 +35,7 @@ function Manage() {
       location: "London, UK",
       appli: "3+ Applied",
       date: "October 27, 2017 April 25, 2011",
-      status: "active",
+      status: "Active",
     },
     {
       image:
@@ -44,7 +44,7 @@ function Manage() {
       location: "London, UK",
       appli: "3+ Applied",
       date: "October 27, 2017 April 25, 2011",
-      status: "active",
+      status: "Active",
     },
   ];
 
@@ -65,7 +65,7 @@ function Manage() {
             </p>
             <p className="mt-3">Ready to jump back in?</p>
 
-            <div className="md:flex flex-col p-5 bg-white md:h-[770px] h-[1000px] w-auto mt-8 rounded-lg  ">
+            <div className="md:flex flex-col p-5 bg-white md:h-[730px] h-[1000px] w-auto mt-8 rounded-lg  ">
               <div className="md:flex">
                 <p className="font-semibold  text-lg">My Job Listings</p>
                 <div className="md:ml-[670px]">
@@ -88,13 +88,13 @@ function Manage() {
                 <div className="p-3 ml-3 font-semibold text-blue-700 text-[16px]">
                   Title
                 </div>
-                <div className="p-3 md:ml-52 ml-40 font-semibold text-blue-700 text-[16px]">
+                <div className="p-3 md:ml-[230px] ml-40 font-semibold text-blue-700 text-[16px]">
                   Applications
                 </div>
                 <div className="p-3 ml-20 font-semibold text-blue-700 text-[16px] md:block hidden">
                   Created & Expired
                 </div>
-                <div className="p-3 ml-20 font-semibold text-blue-700 text-[16px] md:block hidden">
+                <div className="p-3 ml-14 font-semibold text-blue-700 text-[16px] md:block hidden">
                   Status
                 </div>
                 <div className="p-3 ml-20 font-semibold text-blue-700 text-[16px] md:block hidden">
@@ -105,7 +105,7 @@ function Manage() {
               <div className=" mt-5 md:h-18 h-auto  w-full  flex flex-row">
                 <div className="">
                   {job.map((jobs) => (
-                    <div className=" flex h-auto w-full mt-3 pb-2 shadow-[0px_2px_0px_0px_rgba(0,0,0,0.06)]">
+                    <div className=" flex h-auto w-full mt-2 pb-2 shadow-[0px_2px_0px_0px_rgba(0,0,0,0.06)]">
                       <div className="h-full p-2 flex ">
                         <div className="h-[68%]  flex">
                           <div className="flex  h-14  overflow-hidden ">
@@ -113,8 +113,8 @@ function Manage() {
                           </div>
 
                           <div className=" pl-4 md:w-44 w-[155px]">
-                            <div className="flex">
-                              <NavLink className=" font-semibold hover:text-blue-600">
+                            <div className="flex ">
+                              <NavLink className=" font-semibold hover:text-blue-600 md:whitespace-nowrap">
                                 {jobs.name}
                               </NavLink>
                             </div>
@@ -139,14 +139,14 @@ function Manage() {
                           </div>
                         </div>
                       </div>
-                      <div className="p-3 md:ml-6 ml-0 text-[16px]  text-blue-700 pt-10">
+                      <div className="p-3 md:ml-12 ml-0 text-[16px]  text-blue-700 pt-8">
                         <NavLink className=" underline">{jobs.appli}</NavLink>
                       </div>
 
-                      <div className="p-3 ml-28 w-36 text-[14px] text-slate-500  pt-10 md:block hidden ">
+                      <div className="p-3 ml-12 w-36 text-[14px] text-slate-500  pt-8 md:block hidden whitespace-nowrap ">
                         {jobs.date}
                       </div>
-                      <div className="p-3 ml-20 pt-10 text-green-500 text-[14px] md:block hidden">
+                      <div className="p-3 ml-28 pt-10 text-green-500 text-[14px] md:block hidden">
                         {jobs.status}
                       </div>
                       <div className="p-3 ml-20 font-semibold text-blue-700 text-[16px] md:block hidden">
