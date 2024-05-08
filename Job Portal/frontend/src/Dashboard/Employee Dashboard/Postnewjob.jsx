@@ -94,7 +94,7 @@ function Postnewjob() {
                       name="name"
                       placeholder="Title"
                       required=""
-                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-3  h-12  w-full"
+                      className="  p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500  rounded-md mt-3  h-12  w-full"
                     />
                   </div>
 
@@ -105,7 +105,7 @@ function Postnewjob() {
                   name="name"
                   placeholder="write some details about job"
                   required=""
-                  className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-[300px] h-[350px] md:w-[980px] w-full"
+                  className="p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-[300px] h-[350px] md:w-[980px] w-full"
                 />
               </div>
 
@@ -122,7 +122,7 @@ function Postnewjob() {
                       name="name"
                       placeholder="abcd@gmail.com"
                       required=""
-                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                      className="  p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
                     />
                   </div>
                   <div className="flex flex-col mt-5">
@@ -131,7 +131,7 @@ function Postnewjob() {
                     </label>
 
                     <Select
-                      className=" p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-16 h-12 md:w-[460px] w-full"
+                      className=" p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-16 h-12 md:w-[460px] w-full"
                       options={options}
                       value={selectedoptions}
                       onChange={handelChange}
@@ -142,7 +142,7 @@ function Postnewjob() {
                     <label className="font-semibold">Offered Salary</label>
                     <select
                       name="teamSize"
-                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                      className="p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
                       required
                     >
                       <option value="">Select </option>
@@ -159,7 +159,7 @@ function Postnewjob() {
                     <label className="font-semibold">Experience</label>
                     <select
                       name="teamSize"
-                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                      className="p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
                       required
                     >
                       <option value="">Select </option>
@@ -176,7 +176,7 @@ function Postnewjob() {
                     </label>
 
                     <Select
-                      className=" p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-16 h-12 md:w-[460px] w-full"
+                      className=" p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-16 h-12 md:w-[460px] w-full"
                       options={options}
                       value={selectedoptions}
                       onChange={handelChange}
@@ -194,14 +194,14 @@ function Postnewjob() {
                       name="name"
                       placeholder=""
                       required=""
-                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                      className="  p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
                     />
                   </div>
                   <div className="flex flex-col mt-5">
                     <label className="font-semibold">Job Type</label>
                     <select
                       name="teamSize"
-                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                      className="p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
                       required
                     >
                       <option value="">Select </option>
@@ -216,7 +216,7 @@ function Postnewjob() {
                     <label className="font-semibold">Career Level</label>
                     <select
                       name="teamSize"
-                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                      className="p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
                       required
                     >
                       <option value="">Select </option>
@@ -231,7 +231,7 @@ function Postnewjob() {
                     <label className="font-semibold">Gender</label>
                     <select
                       name="teamSize"
-                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                      className="p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
                       required
                     >
                       <option value="">Select</option>
@@ -244,7 +244,7 @@ function Postnewjob() {
                     <label className="font-semibold">Qualification</label>
                     <select
                       name="teamSize"
-                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                      className="p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
                       required
                     >
                       <option value="">Select </option>
@@ -267,7 +267,7 @@ function Postnewjob() {
                       name="name"
                       placeholder="Date"
                       required=""
-                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-3    w-full"
+                      className="  p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500  rounded-md mt-3    w-full"
                     />
                   </div>
 
@@ -279,7 +279,7 @@ function Postnewjob() {
                     <label className="font-semibold">Country</label>
                     <select
                       name="teamSize"
-                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                      className="p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
                       required
                     >
                       <option value="">Select Your Country</option>
@@ -297,7 +297,7 @@ function Postnewjob() {
                     <label className="font-semibold">City</label>
                     <select
                       name="teamSize"
-                      className="p-3 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[475px] w-full"
+                      className="p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500 rounded-md mt-2 md:h-14 h-12 md:w-[475px] w-full"
                       required
                     >
                       <option value="">Select Your City</option>
@@ -323,7 +323,7 @@ function Postnewjob() {
                       name="name"
                       placeholder="Write Full Address"
                       required=""
-                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12  w-full"
+                      className="  p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12  w-full"
                     />
                   </div>
 
@@ -337,7 +337,7 @@ function Postnewjob() {
                       name="name"
                       placeholder="point here"
                       required=""
-                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
+                      className="  p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[460px] w-full"
                     />
                   </div>
                   <div className="flex flex-col mt-6 md:ml-6">
@@ -349,7 +349,7 @@ function Postnewjob() {
                       name="name"
                       placeholder="point here"
                       required=""
-                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[245px] w-full"
+                      className="  p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[245px] w-full"
                     />
                   </div>
                   <div className="flex flex-col mt-6 md:ml-6">
@@ -361,20 +361,25 @@ function Postnewjob() {
                       name="name"
                       placeholder="point here"
                       required=""
-                      className="  p-3 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[240px] w-full"
+                      className="  p-3 bg-slate-200/50 focus:bg-white focus:outline-blue-500  rounded-md mt-2 md:h-14 h-12 md:w-[240px] w-full"
                     />
                   </div>
                   </div>
 
-                  <div className="justify-center flex mt-5 bg-blue-800 w-36 hover:bg-sky-100 md:h-12 h-10 rounded-lg transition duration-800">
-                <NavLink className="flex p-3 text-[14px] text-white hover:text-blue-700"> Search Location </NavLink>
-
+                  <div className=" flex mt-7">
+              <div className="  bg-blue-600 w-36 hover:bg-sky-100 md:h-12 h-10 rounded-lg transition duration-800">
+                <NavLink className="flex justify-center p-3 text-[14px] text-white hover:text-blue-700">
+                  {" "}
+                  Search Location{" "}
+                </NavLink>
               </div>
 
-
-
-              <div className="justify-center flex mt-5 bg-blue-600 w-32  md:h-12 h-10 rounded-lg ">
-                <NavLink className="flex p-2 text-[18px] text-white"> Save </NavLink>
+              <div className=" ml-10  bg-blue-600 w-32  md:h-12 h-10 rounded-lg ">
+                <NavLink className="flex justify-center text-[18px] mt-2 text-white">
+                  {" "}
+                  Save{" "}
+                </NavLink>
+              </div>
               </div>
 
 
