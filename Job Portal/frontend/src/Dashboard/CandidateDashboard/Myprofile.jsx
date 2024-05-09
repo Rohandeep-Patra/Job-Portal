@@ -51,7 +51,7 @@ function Myprofile() {
                       <input
                         type='text'
                         placeholder='Name'
-                        className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                        className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
                       />
 
                     </div>
@@ -60,7 +60,7 @@ function Myprofile() {
                       <input
                         type='text'
                         placeholder='0 123 2523 2693'
-                        className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                        className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
                       />
 
                     </div>
@@ -69,7 +69,7 @@ function Myprofile() {
                       <input
                         type='text'
                         placeholder='www.boss.com'
-                        className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                        className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
                       />
 
                     </div>
@@ -78,7 +78,7 @@ function Myprofile() {
                       <input
                         type='text'
                         placeholder='5-10 Years'
-                        className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                        className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
                       />
 
                     </div>
@@ -87,13 +87,13 @@ function Myprofile() {
                       <input
                         type='text'
                         placeholder='certificate'
-                        className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                        className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
                       />
 
                     </div>
                     <div className='p-4'>
                       <p className='font-semibold'>Current Salary($)</p>
-                      <select className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
+                      <select className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
                         name="salary"
                       >
                         <option value="">select salary</option>
@@ -117,7 +117,7 @@ function Myprofile() {
                       <input
                         type='text'
                         placeholder='UI designer'
-                        className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                        className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
                       />
                     </div>
 
@@ -126,13 +126,13 @@ function Myprofile() {
                       <input
                         type='text'
                         placeholder='boss@gmail.com'
-                        className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                        className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
                       />
                     </div>
 
                     <div className='p-4'>
                       <p className='font-semibold'>Current Salary($)</p>
-                      <select className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
+                      <select className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
                         name="salary"
                       >
                         <option value="">select salary</option>
@@ -160,7 +160,7 @@ function Myprofile() {
 
                     <div className='p-4'>
                       <p className='font-semibold'>Age </p>
-                      <select className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
+                      <select className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
                         name="salary"
                       >
                         <option value="">select Age </option>
@@ -176,13 +176,13 @@ function Myprofile() {
                       <input
                         type='text'
                         placeholder='English,Hindi'
-                        className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                        className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
                       />
                     </div>
 
                     <div className='p-4'>
                       <p className='font-semibold'>Allow In Search & Listing</p>
-                      <select className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
+                      <select className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
                         name="salary"
                       >
                         <option value="">Yes</option>
@@ -200,11 +200,11 @@ function Myprofile() {
                 {/* ........ Description.......... */}
 
                 <div className='md:p-8 p-3 md:mt-5'>
-                  <p className='font-semibold p-5'> Description</p>
+                  <p className='font-semibold p-4'> Description</p>
                   <textarea
                     type='text'
                     placeholder='write your self some things'
-                    className='p-3 bg-slate-200 focus:bg-white focus:outline-blue-400  rounded-md mt-2 md:h-[300px] h-[350px] md:w-[1099x] w-full'
+                    className='p-3 bg-slate-200 focus:bg-white focus:outline-blue-400  rounded-md mt-2 md:h-[300px] h-[350px] md:w-[1099x] w-full resize-none'
                   />
                 </div>
                 <button className='bg-blue-700 h-[50px] w-[150px]  ml-3 md:ml-8 rounded-[10px]	 text-white text-center text-mono'>Save</button>
@@ -224,7 +224,7 @@ function Myprofile() {
                       <input
                         type='text'
                         placeholder='www.facebook.com'
-                        className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                        className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
                       />
                     </div>
                     <div className='p-4'>
@@ -244,7 +244,7 @@ function Myprofile() {
                       <input
                         type='text'
 
-                        className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                        className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
                       />
                     </div>
                     <div className='p-4'>
@@ -252,7 +252,7 @@ function Myprofile() {
                       <input
                         type='text'
 
-                        className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
+                        className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white'
                       />
                     </div>
 
@@ -272,7 +272,7 @@ function Myprofile() {
                 <div className=' py-3 md:ml-6   w-full md:w-[550px] '>
                   <div className='p-4'>
                     <p className='font-semibold'>Country</p>
-                    <select className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
+                    <select className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
                       name="salary"
                     >
                       <option value="">India</option>
@@ -289,7 +289,7 @@ function Myprofile() {
                 <div className=' py-1  md:ml-9	 w- full md:w-[550px]'>
                   <div className='p-4'>
                     <p className='font-semibold'>City</p>
-                    <select className='bg-slate-200 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
+                    <select className='bg-slate-200/60 h-[50px] w-full rounded-md p-3 mt-4 focus:outline-blue-700 focus:bg-white '
                       name="salary"
                     >
                       <option value="">Melbourne</option>
@@ -312,7 +312,7 @@ function Myprofile() {
                 <textarea
                   type='text'
                   placeholder='write your self some things'
-                  className='p-3 bg-slate-200 focus:bg-white focus:outline-blue-400  rounded-md mt-3  md:h-[120px] h-[150px]  w-full md:w-[1110px]'
+                  className='p-3 bg-slate-200/60 focus:bg-white focus:outline-blue-400  rounded-md mt-3  md:h-[120px] h-[150px]  w-full md:w-[1110px] resize-none'
                 />
               </div>
               <button className='bg-blue-700 h-[50px] w-[150px]  ml-3 md:ml-8 rounded-[10px] mt-4 	 text-white text-center text-mono'>Save</button>

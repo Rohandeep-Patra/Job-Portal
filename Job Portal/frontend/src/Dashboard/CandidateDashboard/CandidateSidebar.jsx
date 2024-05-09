@@ -41,7 +41,9 @@ function CandidateSidebar() {
                         <NavLink to={"/candidate-dash"} className={"nav"}>
                             <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-3 group mr-2'>
                                 <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
-                                    <GoHome />
+                                    <span class="material-symbols-outlined">
+                                        home
+                                    </span>
                                 </div>
                                 <h1 className='text-1sm p-2 group-hover:text-blue-500'>Dashboard</h1>
                             </div>
@@ -51,16 +53,17 @@ function CandidateSidebar() {
                             <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-3 group mr-2'>
                                 <div className=' text-2xl p-2 ml-2 group-hover:text-blue-500'>
                                     <CgProfile />
-
                                 </div>
                                 <h1 className='text-1sm p-2 group-hover:text-blue-500'>My Profile</h1>
                             </div>
                         </NavLink>
+
                         <NavLink to={"/candidate-dash/myResume"} className={"nav"}>
                             <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-3 group mr-2'>
                                 <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
-                                    <FaRegFileAlt />
-
+                                    <span class="material-symbols-outlined">
+                                        content_copy
+                                    </span>
                                 </div>
                                 <h1 className='text-1sm p-2 group-hover:text-blue-500'>My Resume</h1>
                             </div>
@@ -69,14 +72,15 @@ function CandidateSidebar() {
                         <NavLink to={"/candidate-dash/appliedJob"} className="nav">
                             <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-3 group mr-2'>
                                 <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
-                                    <IoBagRemoveOutline />
+                                    <span class="material-symbols-outlined">
+                                        business_center
+                                    </span>
 
                                 </div>
                                 <h1 className="text-1sm p-2 group-hover:text-blue-500"> Applied Job</h1>
                             </div>
                         </NavLink>
                         <NavLink to={"/candidate-dash/jobAlerts"} className={"nav"}>
-
                             <div className='flex hover:bg-slate-200 w-25 h-10 rounded-md mt-3 group mr-2'>
                                 <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
                                     <LuBellRing />
@@ -88,8 +92,9 @@ function CandidateSidebar() {
                         <NavLink to={"/candidate-dash/candidateshort"} className={"nav"}>
                             <div className='flex hover:bg-slate-200 w-25 h-10 rounded-md mt-3 group mr-2'>
                                 <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
-                                    <CiBookmarkCheck />
-
+                                    <span class="material-symbols-outlined">
+                                        bookmarks
+                                    </span>
                                 </div>
                                 <h1 className='text-1sm p-2 group-hover:text-blue-500'>Shortlisted Job</h1>
                             </div>
@@ -97,9 +102,9 @@ function CandidateSidebar() {
                         <NavLink to={"/candidate-dash/changePassword"} className={"nav"}>
                             <div className='flex hover:bg-slate-200 w-25 h-10 rounded-md mt-3 group mr-2'>
                                 <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
-                                <CiLock />
-
-
+                                    <span class="material-symbols-outlined">
+                                        key
+                                    </span>
                                 </div>
                                 <h1 className='text-1sm p-2 group-hover:text-blue-500'> Change Password</h1>
                             </div>
