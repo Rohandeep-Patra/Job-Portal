@@ -85,7 +85,7 @@ function AppliedJob() {
                 <div className=' hidden lg:block p-3 ml-2 font-semibold text-blue-600'>
                   Date Applied
                 </div>
-                <div className='p-3 md:ml-2 ml-[110px] font-semibold text-blue-600'>
+                <div className='p-3 md:ml-2 ml-[110px] font-semibold text-blue-600 '>
                   Status
                 </div>
                 <div className='hidden lg:block  p-3 ml-2 font-semibold text-blue-600'>
@@ -136,11 +136,11 @@ function AppliedJob() {
                   </div>
 
                   {/* .........Date Applied.... */}
-                  <div className='hidden lg:block h-[50px] w-[100px] ml-10 mt-2 font-serif'>
+                  <div className='hidden lg:block h-[50px] w-[100px] ml-[50px] mt-2 font-serif'>
                     <p className='font-serif'>{jobs.date}</p>
                   </div>
 
-                  <div className=' h-[50px] w-[100px]  md:mt-2 mt-10  font-serif md:ml-[220px] ml-[88px]'>
+                  <div className=' h-[50px] w-[100px]  md:mt-2 mt-10  font-serif md:ml-[250px] ml-[88px]'>
                     <p className=' font-semibold font-serif text-green-500'>{jobs.status}</p>
                   </div>
 

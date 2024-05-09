@@ -86,7 +86,7 @@ function CandidateShort() {
                   </select>
                 </div>
               </div>
-              <div className=' w-full  h-[55px] mt-8 rounded-md bg-slate-100 flex flex-row md:gap-[230px] gap-[100px] ' >
+              <div className=' w-full  h-[55px] mt-8 rounded-md bg-slate-200/60 flex flex-row md:gap-[230px] gap-[100px] ' >
 
                 <div className='p-3 md:ml-4 ml-1 font-semibold text-blue-600'>
                   Job Title
