@@ -68,14 +68,14 @@ function Manage() {
             <div className="md:flex flex-col p-5 bg-white md:h-[730px] h-[1000px] w-auto mt-8 rounded-lg  ">
               <div className="md:flex">
                 <p className="font-semibold  text-lg">My Job Listings</p>
-                <div className="md:ml-[670px]">
+                <div className="md:ml-[670px] ">
                   <select
                     name="teamSize"
-                    className="p-2 bg-slate-200 focus:bg-white focus:outline-blue-500 rounded-md md:mt-0 mt-3 md:h-10 h-12  w-[160px]"
+                    className="p-2 bg-slate-200 focus:bg-white focus:outline-blue-500  rounded-md md:mt-0 mt-3 md:h-10 h-12  w-[160px]"
                     required
                   >
                     <option value="">Select</option>
-                    <option value="Last 6 Months">Last 6 Months</option>
+                    <option value="Last 6 Months" className="group-hover:bg-white ">Last 6 Months</option>
                     <option value="Last 12 Months">Last 12 Months</option>
                     <option value="Last 16 Months">Last 16 Months</option>
                     <option value="Last 24 Months">Last 24 Months</option>

@@ -230,7 +230,7 @@ function Dash() {
     <div className='flex mt-20 bg-slate-100'>
 
 <div className='w-[16%] fixed'><Sidebar/></div>
-<div className='md:p-9 p-6 md:ml-[16%]  mx-auto w-full md:mt-0 mt-9'>
+<div className='md:p-10 p-6 md:ml-[17%]  mx-auto w-full md:mt-0 mt-9'>
     <p className=' text-2xl font-medium md:text-3xl md:font-semibold '>Dashboard Home!</p>
     <p className='mt-3'>Ready to jump back in?</p>
 

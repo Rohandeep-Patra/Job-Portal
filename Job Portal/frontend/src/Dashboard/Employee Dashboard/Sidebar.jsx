@@ -31,61 +31,61 @@ function Sidebar() {
 
 
                     <NavLink to={"/employee-dash"} className={"nav"}>
-                    <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-3 group mr-2'>
-                        <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
+                    <div className='flex hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-[220px] h-10 rounded-md mt-3 group mr-2'>
+                        <div className='text-2xl p-2 ml-4 group-hover:text-blue-700 group-hover:text-[25px]'>
                             <GoHome />
                         </div>
-                        <h1 className='text-1sm p-2 group-hover:text-blue-500'>Dashboard</h1>
+                        <h1 className=' text-base p-2 group-hover:text-blue-700 group-hover:font-medium group-hover:text-'>Dashboard</h1>
                         </div>
                     </NavLink>
                     
 
 
                     <NavLink to={"/employee-dash/company"} className={"nav"}>
-                    <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-2 group'>
-                        <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
+                    <div className='flex hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-[220px] h-10 rounded-md mt-3 group'>
+                        <div className=' text-2xl p-2 ml-4 group-hover:text-blue-700 group-hover:text-[25px]'>
                         <RiContactsFill />
                         </div>
-                    <h1 className='text-sm p-2 group-hover:text-blue-500'>Company Profile</h1>
+                    <h1 className='text-1sm p-2 group-hover:text-blue-700 group-hover:font-medium'>Company Profile</h1>
                     </div>
                     </NavLink>
 
 
                     <NavLink to={"/employee-dash/postnewjob"} className={"nav"}>
-                    <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-2 group'>
-                        <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
+                    <div className='flex hover:shadow-[rgba(0,_0,_0,_0.24)_1px_3px_8px] w-[220px] h-10 rounded-md mt-3 group'>
+                        <div className='text-2xl p-2 ml-4 group-hover:text-blue-700 group-hover:text-[25px]'>
                         <LuSendHorizonal />
                         </div>
-                    <h1 className='text-sm p-2 group-hover:text-blue-500'>Post A New Job</h1>
+                    <h1 className='text-1sm p-2 group-hover:text-blue-700 group-hover:font-medium'>Post A New Job</h1>
                     </div>
                     </NavLink>
 
 
                     <NavLink to={"/employee-dash/manage"} className={"nav"}>
-                    <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-2 group'>
-                        <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
+                    <div className='flex hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-[220px] h-10 rounded-md mt-3 group'>
+                        <div className='text-2xl p-2 ml-4 group-hover:text-blue-700 group-hover:text-[25px]'>
                         <IoBagCheckOutline />
                         </div>
-                    <h1 className='text-sm p-2 group-hover:text-blue-500'>Manage Jobs</h1>
+                    <h1 className='text-1sm p-2 group-hover:text-blue-700 group-hover:font-medium'>Manage Jobs</h1>
                     </div>
                     </NavLink>
 
                     <NavLink to={"/employee-dash/applicants"} className={"nav"}>
-                    <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-2 group'>
-                        <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
+                    <div className='flex hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-[220px] h-10 rounded-md mt-3 group'>
+                        <div className='text-2xl p-2 ml-4 group-hover:text-blue-700 group-hover:text-[25px]'>
                         <FaWpforms />
                         </div>
-                    <h1 className='text-sm p-2 group-hover:text-blue-500'>All Applicants</h1>
+                    <h1 className='text-1sm p-2 group-hover:text-blue-700 group-hover:font-medium'>All Applicants</h1>
                     </div>
                     </NavLink>
 
 
                     <NavLink to={"/employee-dash/short"} className={"nav"}>
-                    <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-2 group'>
-                        <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
+                    <div className='flex hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-[220px] h-10 rounded-md mt-3 group'>
+                        <div className='text-2xl p-2 ml-4 group-hover:text-blue-700 group-hover:text-[25px]'>
                         <BsBookmark />
                         </div>
-                    <h1 className='text-sm p-2 group-hover:text-blue-500'>Shortlist Resumes</h1>
+                    <h1 className='text-1sm p-2 group-hover:text-blue-700 group-hover:font-medium'>Shortlist Resumes</h1>
                     </div>
                     </NavLink>
 
