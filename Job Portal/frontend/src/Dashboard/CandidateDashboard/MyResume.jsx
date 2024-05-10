@@ -3,6 +3,23 @@ import CandidateSidebar from './CandidateSidebar'
 import Nav2 from '../../NavBar/Nav2'
 
 function MyResume() {
+
+  let add = [
+    {
+      course: "Bachlors in Fine Arts",
+      year: "2012-2014",
+      name: "Modern College",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante",
+    },
+    {
+      course: "Computer Science",
+      year: "2008-2012",
+      name: "Harvard University",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante",
+    },
+    
+  ]
+  let woek
   return (
     <>
 
@@ -47,10 +64,10 @@ function MyResume() {
               </div>
 
               {/* .................Education............. */}
-              <div className=' border border-black p-3 h-auto w-full'>
+              <div className='  p-3 h-auto w-full'>
 
-                <div className='border border-black h-[50px]  '>
-                  <p className='font-semibold '> Education</p>
+                <div className=' h-[50px]  '>
+                  <p className='font-semibold text-[18px]'> Education</p>
                   <div className='flex ml-[1000px] text-red-500'>
                     <span class="material-symbols-outlined bg-red-200 rounded-full">
                       add
@@ -58,34 +75,67 @@ function MyResume() {
                     <button className='ml-2  '>Add Aducation</button>
                   </div>
                 </div>
-                {/* .........loop_ start....... */}
+                {/* .........1st_loop_ start....... */}
+                {add.map((adds) =>
+                  <div className=' h-auto mt-[60px]'>
 
-                <div className='border border-black h-auto '>
+                    <div className=' flex'>
+                      <p className='font-semibold whitespace-nowrap text-[18px]'> {adds.course}</p>
+                      <p className='md:h-[33px] md:w-24 text-center  md:rounded-[15px] rounded-md  bg-red-200 text-red-500 font-semibold ml-8 whitespace-nowrap '>{adds.year}</p>
+                      <button className='hover:bg-blue-500 hover:text-white bg-slate-200 rounded-[10px] h-8 w-8 py-1 ml-10'>
+                        <span class="material-symbols-outlined">
+                          stylus
+                        </span>
+                      </button>
+                      <button className='hover:bg-blue-500 hover:text-white bg-slate-200 rounded-[10px] h-8 w-8 py-1 ml-4'>
+                        <span class="material-symbols-outlined">
+                          delete
+                        </span>
+                      </button>
 
-                  <div className='border flex'>
-                    <p className='font-semibold whitespace-nowrap'> Bachlors in Fine Arts</p>
-                    <p className='md:h-[33px] md:w-24 text-center  md:rounded-[15px] rounded-md  bg-red-200 text-red-500 font-semibold ml-8 whitespace-nowrap '>2012-2014</p>
-                    <button className='hover:bg-blue-500 hover:text-white bg-slate-200 rounded-[10px] h-8 w-8 py-1 ml-10'>
-                      <span class="material-symbols-outlined">
-                        stylus
-                      </span>
-                    </button>
-                    <button className='hover:bg-blue-500 hover:text-white bg-slate-200 rounded-[10px] h-8 w-8 py-1 ml-4'>
-                      <span class="material-symbols-outlined">
-                        delete
-                      </span>
-                    </button>
-                  
+                    </div>
+                    <div><p className='font-semibold text-red-500 text-md'> { adds.name}</p></div>
+                    <p className='mt-5 '>{adds.text}</p>
+
+
                   </div>
-                  <div><p className='font-semibold text-red-500 '> Modern College</p></div>
-                  
 
-
-
-                  <div></div>
-
-
+                )}
+                <div className=' h-[50px] mt-[110px] '>
+                  <p className='font-semibold text-[18px]'> Work & Experience</p>
+                  <div className='flex ml-[1000px] text-red-500'>
+                    <span class="material-symbols-outlined bg-red-200 rounded-full">
+                      add
+                    </span>
+                    <button className='ml-2  '>Add Aducation</button>
+                  </div>
                 </div>
+                {/* .........1st_loop_ start....... */}
+                {add.map((adds) =>
+                  <div className=' h-auto mt-[60px]'>
+
+                    <div className=' flex'>
+                      <p className='font-semibold whitespace-nowrap text-xl'> {adds.course}</p>
+                      <p className='md:h-[33px] md:w-24 text-center  md:rounded-[15px] rounded-md  bg-red-200 text-red-500 font-semibold ml-8 whitespace-nowrap '>{adds.year}</p>
+                      <button className='hover:bg-blue-500 hover:text-white bg-slate-200 rounded-[10px] h-8 w-8 py-1 ml-10'>
+                        <span class="material-symbols-outlined">
+                          stylus
+                        </span>
+                      </button>
+                      <button className='hover:bg-blue-500 hover:text-white bg-slate-200 rounded-[10px] h-8 w-8 py-1 ml-4'>
+                        <span class="material-symbols-outlined">
+                          delete
+                        </span>
+                      </button>
+
+                    </div>
+                    <div><p className='font-semibold text-red-500 text-md'> { adds.name}</p></div>
+                    <p className='mt-5 '>{adds.text}</p>
+
+
+                  </div>
+
+                )}
 
               </div>
 

@@ -39,13 +39,13 @@ function CandidateSidebar() {
 
 
                         <NavLink to={"/candidate-dash"} className={"nav"}>
-                            <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-3 group mr-2'>
-                                <div className='text-2xl p-2 ml-2 group-hover:text-blue-500'>
+                            <div className='flex hover:bg-slate-200 w-52 h-10 rounded-md mt-3 group mr-2 '>
+                                <div className='text-2xl p-2 ml-2 group-hover:text-blue-500 '>
                                     <span class="material-symbols-outlined">
                                         home
                                     </span>
                                 </div>
-                                <h1 className='text-1sm p-2 group-hover:text-blue-500'>Dashboard</h1>
+                                <h1 className='text-2sm p-2 group-hover:text-blue-500  '>Dashboard</h1>
                             </div>
                         </NavLink>
 
