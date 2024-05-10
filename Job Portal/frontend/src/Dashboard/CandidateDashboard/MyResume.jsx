@@ -17,9 +17,9 @@ function MyResume() {
       name: "Harvard University",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante",
     },
-    
+
   ]
-  let woek
+
   return (
     <>
 
@@ -94,7 +94,7 @@ function MyResume() {
                       </button>
 
                     </div>
-                    <div><p className='font-semibold text-red-500 text-md'> { adds.name}</p></div>
+                    <div><p className='font-semibold text-red-500 text-md'> {adds.name}</p></div>
                     <p className='mt-5 '>{adds.text}</p>
 
 
@@ -129,7 +129,7 @@ function MyResume() {
                       </button>
 
                     </div>
-                    <div><p className='font-semibold text-red-500 text-md'> { adds.name}</p></div>
+                    <div><p className='font-semibold text-red-500 text-md'> {adds.name}</p></div>
                     <p className='mt-5 '>{adds.text}</p>
 
 
