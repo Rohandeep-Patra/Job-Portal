@@ -35,7 +35,7 @@ function Sidebar() {
                         <div className='text-2xl p-2 ml-4 group-hover:text-blue-700 group-hover:text-[25px]'>
                             <GoHome />
                         </div>
-                        <h1 className=' text-base p-2 group-hover:text-blue-700 group-hover:font-medium group-hover:text-'>Dashboard</h1>
+                        <h1 className=' text-base p-2  group-hover:text-blue-700 group-hover:font-medium group-hover:text-'>Dashboard</h1>
                         </div>
                     </NavLink>
                     
