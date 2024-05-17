@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router';
-import './App.css';
+import './app.css';
 import Home from './Home/Home';
 import FindJobs from './Find Jobs/FindJobs';
 import Candidates from './Candidates/Candidates';
@@ -23,7 +23,9 @@ import AppliedJob from './Dashboard/CandidateDashboard/AppliedJob';
 import JobAlerts from './Dashboard/CandidateDashboard/JobAlerts';
 import CandidateShort from './Dashboard/CandidateDashboard/CandidateShort';
 import ChangePassword from './Dashboard/CandidateDashboard/ChangePassword';
-import Login from './Login And Registration/Login';
+
+import Register from './Login And Registration/Register';
+import ForgetPassword from './Login And Registration/ForgetPassword';
 
 
 
@@ -40,7 +42,7 @@ function App() {
         <Route exact path='/candidate' element={<Candidates/>}/>
         <Route exact path='/employee' element={<Employees/>}/>
         <Route exact path='/contact' element={<Contact/>}/>
-        <Route exact path='/login' element={<Login/>}/>
+        {/* <Route exact path='/login' element={<Login/>}/> */}
 
        
         {/* Employee */}
@@ -69,6 +71,10 @@ function App() {
         <Route exact path='/employee-dash/short' element={<Short/>}/>
         <Route exact path='/employee-dash/short' element={<Short/>}/> */}
      
+        <Route exact path='/register' element={<Register/>}/>
+        <Route exact path='/forgetPassword' element={<ForgetPassword/>}/>
+
+        
 
       </Routes>
     </>
