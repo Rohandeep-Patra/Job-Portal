@@ -1,0 +1,6 @@
+.blurred-background {
+    filter: grayscale(0.8) blur(1px); /* Adjust the blur radius as needed */
+     /* Adjust the blur radius as needed */
+    transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+    
+  }

@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import Footer from "../Footer/Footer";
+import "../app.css"
 
 const Home = () => {
   let JobDetails = [
@@ -46,6 +47,7 @@ const Home = () => {
         <div className="absolute z-50">
           <Navbar />
         </div>
+        
         <div className="sm:h-[115vh] md:h-[130vh] w-auto z-49 bg-gradient-to-r from-indigo-600 to-blue-800">
           <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap ">
             <div className="pt-20 ml-10 flex flex-col justify-center md:justify-start font-semibold md:basis-3/5 md:ml-20">
@@ -124,7 +126,7 @@ const Home = () => {
             </div>
             <div className="md:basis-2/5 ">
               <svg
-                className=" hidden md:block md:h-[570px] md:w-[650px] relative top-[155px] "
+                className=" hidden lg:block md:h-[570px] md:w-[650px] relative top-[155px] "
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 820.25417 645.76932"
               >
@@ -396,8 +398,12 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+
+
+
         <svg
-          className="md:block hidden absolute z-47 top-[780px]"
+          className="lg:block hidden absolute z-47 top-[780px]"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
         >
@@ -407,6 +413,8 @@ const Home = () => {
             d="M0,32L80,26.7C160,21,320,11,480,21.3C640,32,800,64,960,69.3C1120,75,1280,53,1360,42.7L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
+
+
 
         <div className="bg-white pr-8 pl-8 md:px-20 pt-16 md:pt-6 md:absolute">
           <div>
@@ -450,6 +458,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+
+
 
         <div className="flex flex-col items-center bg-white md:mt-72">
           <div className="flex flex-col items-center pt-16">
@@ -514,6 +525,8 @@ const Home = () => {
           </div>
         </div>
 
+
+
         <div className="md:px-10 px-6 pt-14 h-auto md:h-[690px] w-full bg-white flex flex-col md:flex-row">
           <div className="h-[450px] md:h-full md:w-[50%] w-full overflow-hidden bg-cover md:py-10 ">
             <img
@@ -537,6 +550,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+
+
 
         <div className="bg-white h-auto w-full mt-10 md:mt-10 md:px-24 px-6">
           <div className="bg-white flex flex-col justify-center text-center items-center pb-16">
@@ -634,6 +650,9 @@ const Home = () => {
           </div>
         </div>
 
+
+
+
         <div className="flex flex-col md:flex-row justify-center h-auto w-full md:pt-28 md:px-24 sm:px-6 md:gap-6 sm:py-20 ">
           <div className="md:h-[300px] sm:auto bg-blue-800 sm:w-full md:w-[50%] sm:mb-3 md:mb-0 rounded-md flex md:flex-row sm:flex-col md:justify-around sm:items-center overflow-hidden">
             <div className="flex flex-col px-14 py-14 text-white sm:items-center md:items-start sm:text-center md:text-left">
@@ -678,6 +697,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+
+
 
         <div className="md:px-24 md:py-10 sm:px-6 sm:py-6">
           <div>
@@ -774,6 +796,9 @@ const Home = () => {
           </div>
         </div>
 
+
+
+
         <div className="md:px-10 px-6 pt-14 h-auto md:h-[750px] w-full bg-white flex flex-col md:flex-row">
           <div className="h-[450px] md:h-full md:w-[50%] w-full overflow-hidden bg-cover md:py-10 ">
             <img
@@ -856,6 +881,9 @@ const Home = () => {
           </div>
         </div>
 
+
+
+
         <div className="flex flex-col h-auto w-auto mt-24 md:px-20 sm:px-6 md:h-[650px] bg-white overflow-hidden">
           <p className="text-3xl font-semibold font-Josefin">Featured Cities</p>
           <p className="mt-4">
@@ -914,6 +942,9 @@ const Home = () => {
           </div>
         </div>
 
+
+
+
         <div className="mt-20 sm:bg-gradient-to-b md:bg-gradient-to-r from-blue-600 to-sky-400 h-auto md:h-64 flex md:flex-row sm:flex-col md:mx-20 md:px-10  sm:mx-6 items-center justify-around rounded-md">
           <div className="flex flex-col sm:text-center md:text-left sm:px-6 sm:mt-10 md:mt-0">
             <p className="text-white text-3xl font-Josefin font-semibold">
@@ -934,6 +965,9 @@ const Home = () => {
             </button>
           </div>
         </div>
+
+
+
 
         <Footer/>
       </div>
